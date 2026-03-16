@@ -40,102 +40,6 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Fetch GitHub Projects
-async function fetchGitHubProjects() {
-    const username = 'vivek-049';
-    const projectsContainer = document.getElementById('github-projects');
-    
-    try {
-        const response = await fetch(`https://api.github.com/users/${username}/repos?sort=updated&per_page=6`);
-        
-        if (!response.ok) {
-            throw new Error('Failed to fetch projects');
-        }
-        
-        const repos = await response.json();
-        
-        if (repos.length === 0) {
-            projectsContainer.innerHTML = `
-                <div class="loading">
-                    <p>No projects found yet. Start building and they'll appear here!</p>
-                </div>
-            `;
-            return;
-        }
-        
-        projectsContainer.innerHTML = '';
-        
-        repos.forEach(repo => {
-            if (!repo.fork) { // Skip forked repos
-                const projectCard = createProjectCard(repo);
-                projectsContainer.appendChild(projectCard);
-            }
-        });
-        
-    } catch (error) {
-        console.error('Error fetching GitHub projects:', error);
-        projectsContainer.innerHTML = `
-            <div class="loading">
-                <p>Unable to load projects. Please check back later.</p>
-            </div>
-        `;
-    }
-}
-
-function createProjectCard(repo) {
-    const card = document.createElement('div');
-    card.className = 'project-card';
-    
-    const languageColors = {
-        'JavaScript': '#f1e05a',
-        'Python': '#3572A5',
-        'Java': '#b07219',
-        'C++': '#f34b7d',
-        'C': '#555555',
-        'TypeScript': '#2b7489',
-        'HTML': '#e34c26',
-        'CSS': '#563d7c',
-        'Go': '#00ADD8',
-        'Rust': '#dea584',
-        'Ruby': '#701516',
-        'PHP': '#4F5D95',
-        'Swift': '#ffac45',
-        'Kotlin': '#F18E33',
-        'Shell': '#89e051',
-        'Jupyter Notebook': '#DA5B0B',
-        'default': '#8b949e'
-    };
-    
-    const languageColor = languageColors[repo.language] || languageColors['default'];
-    
-    card.innerHTML = `
-        <div class="project-header">
-            <h3 class="project-title">${repo.name}</h3>
-            <p class="project-description">${repo.description || 'No description available'}</p>
-        </div>
-        <div class="project-footer">
-            <div class="project-language">
-                ${repo.language ? `
-                    <span class="language-dot" style="background-color: ${languageColor}"></span>
-                    <span>${repo.language}</span>
-                ` : ''}
-            </div>
-            <div class="project-links">
-                <a href="${repo.html_url}" target="_blank" rel="noopener noreferrer" aria-label="View on GitHub">
-                    <i class="fab fa-github"></i>
-                </a>
-                ${repo.homepage ? `
-                    <a href="${repo.homepage}" target="_blank" rel="noopener noreferrer" aria-label="Live Demo">
-                        <i class="fas fa-external-link-alt"></i>
-                    </a>
-                ` : ''}
-            </div>
-        </div>
-    `;
-    
-    return card;
-}
-
 // Intersection Observer for scroll animations
 const observerOptions = {
     threshold: 0.1,
@@ -153,11 +57,8 @@ const observer = new IntersectionObserver((entries) => {
 
 // Observe all sections and cards
 document.addEventListener('DOMContentLoaded', () => {
-    // Fetch GitHub projects
-    fetchGitHubProjects();
-    
     // Set up scroll animations
-    const animatedElements = document.querySelectorAll('.stat-card, .skill-category, .contact-card');
+    const animatedElements = document.querySelectorAll('.stat-card, .skill-category, .contact-card, .project-card, .publication-item');
     animatedElements.forEach(el => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(30px)';

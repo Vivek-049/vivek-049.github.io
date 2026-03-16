@@ -82,10 +82,184 @@
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title">Projects</h2>
-            <div id="github-projects" class="projects-grid">
-                <!-- Projects will be loaded dynamically from GitHub -->
-                <div class="loading">Loading projects...</div>
+            <h2 class="section-title">Research & Projects</h2>
+            
+            <!-- Publications Highlight -->
+            <div class="publications-highlight">
+                <h3 class="publications-title"><i class="fas fa-file-alt"></i> Publications</h3>
+                <div class="publications-list">
+                    <div class="publication-item">
+                        <div class="pub-content">
+                            <h4>Robots That Know When to Ask: VLM-Driven Reasoning for Human-on-Demand Multi-Robot Teleoperation</h4>
+                            <p class="pub-authors">Vivek Kumar, et al.</p>
+                            <p class="pub-venue"><strong>IROS 2026</strong> (Under Review)</p>
+                        </div>
+                        <span class="pub-badge">Under Review</span>
+                    </div>
+                    <div class="publication-item">
+                        <div class="pub-content">
+                            <h4>When Autonomy Needs Help: Reasoning-Guided Escalation for Remote Driving</h4>
+                            <p class="pub-authors">Vivek Kumar, et al.</p>
+                            <p class="pub-venue"><strong>CVPR Workshop 2026</strong> (Under Review)</p>
+                        </div>
+                        <span class="pub-badge">Under Review</span>
+                    </div>
+                    <div class="publication-item">
+                        <div class="pub-content">
+                            <h4>Zero-Shot Blind Inpainting with Pretrained Diffusion Priors</h4>
+                            <p class="pub-authors">Wenjie Zhang, Vivek Kumar, et al.</p>
+                            <p class="pub-venue"><strong>ICLR</strong> (In Preparation)</p>
+                        </div>
+                        <span class="pub-badge prep">In Prep</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Network Lab Projects -->
+                <div class="project-card featured">
+                    <div class="project-header">
+                        <h3 class="project-title">VLM/VLA Models for Autonomous Teleoperation</h3>
+                        <p class="project-description">Developing Vision-Language and Vision-Language-Action models for autonomous decision-making and human-on-demand teleoperation in robotic and driving systems. Research conducted at UMN's Network Lab under Prof. Zhi-Li Zhang.</p>
+                    </div>
+                    <div class="project-footer">
+                        <div class="project-language">
+                            <span class="language-dot" style="background-color: #3572A5"></span>
+                            <span>VLM/VLA, PyTorch</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#publications" aria-label="Publications"><i class="fas fa-file-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card featured">
+                    <div class="project-header">
+                        <h3 class="project-title">Advanced Driver Assistance System (ADAS)</h3>
+                        <p class="project-description">Developed perception and driver-assistance modules for autonomous vehicles including object detection, lane detection, and collision warning systems using deep learning models. Deployed on MnCAV research vehicle.</p>
+                    </div>
+                    <div class="project-footer">
+                        <div class="project-language">
+                            <span class="language-dot" style="background-color: #f34b7d"></span>
+                            <span>ROS 2, YOLOv8, TensorRT</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="Advanced Driver Assistance ADAS.pdf" target="_blank" aria-label="Presentation"><i class="fas fa-file-pdf"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card featured">
+                    <div class="project-header">
+                        <h3 class="project-title">Bird's-Eye-View (BEV) Perception Pipeline</h3>
+                        <p class="project-description">Implemented multi-modal sensor fusion combining camera and LiDAR data for robust obstacle detection and scene understanding. Designed for autonomous vehicle perception in complex environments.</p>
+                    </div>
+                    <div class="project-footer">
+                        <div class="project-language">
+                            <span class="language-dot" style="background-color: #3572A5"></span>
+                            <span>PyTorch, LiDAR, Computer Vision</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="Perception in Bird's eye view (BEV) using Inverse perspective Mapping (IPM).pdf" target="_blank" aria-label="Presentation"><i class="fas fa-file-pdf"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card featured">
+                    <div class="project-header">
+                        <h3 class="project-title">Video Prediction for Latency Compensation</h3>
+                        <p class="project-description">Built video prediction models to compensate for network latency in teleoperation systems, improving operator situational awareness during remote driving scenarios.</p>
+                    </div>
+                    <div class="project-footer">
+                        <div class="project-language">
+                            <span class="language-dot" style="background-color: #3572A5"></span>
+                            <span>Deep Learning, PyTorch</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="GenAI4 For Teleoperation.pdf" target="_blank" aria-label="Presentation"><i class="fas fa-file-pdf"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card featured">
+                    <div class="project-header">
+                        <h3 class="project-title">RL-Based Intersection Safety System</h3>
+                        <p class="project-description">Designing reinforcement learning-based safety systems for intersection alerting to improve decision-making in multi-vehicle scenarios for autonomous driving applications.</p>
+                    </div>
+                    <div class="project-footer">
+                        <div class="project-language">
+                            <span class="language-dot" style="background-color: #3572A5"></span>
+                            <span>Reinforcement Learning, Safety</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="LRRB Alert System [March 2026].pdf" target="_blank" aria-label="Presentation"><i class="fas fa-file-pdf"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">Semantic 3D Reconstruction for Indoor AI Agents</h3>
+                        <p class="project-description">Designed a 3D semantic reconstruction pipeline from RGB-D sequences integrating instance segmentation, PnP-based pose estimation, and point cloud fusion. Implemented point-to-point ICP from scratch.</p>
+                    </div>
+                    <div class="project-footer">
+                        <div class="project-language">
+                            <span class="language-dot" style="background-color: #3572A5"></span>
+                            <span>ROS 2, YOLO, OpenCV</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/vivek-049" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">Autonomous Drone 3D Mapping with Stereo SLAM</h3>
+                        <p class="project-description">Developed stereo SLAM pipeline for GPS-denied indoor navigation using PX4, Isaac ROS depth segmentation. Achieved sub-2ms inference latency with TensorRT optimization on custom stereo cameras.</p>
+                    </div>
+                    <div class="project-footer">
+                        <div class="project-language">
+                            <span class="language-dot" style="background-color: #f34b7d"></span>
+                            <span>PX4, Isaac ROS, SLAM</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="IRS Project Presentation_ Autonomous Drone 3D Mapping with Stereo SLAM.pdf" target="_blank" aria-label="Presentation"><i class="fas fa-file-pdf"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">Mobile EV Charging Robot (SICK LiDAR Competition)</h3>
+                        <p class="project-description">Developed perception and navigation components for a mobile EV charging robot designed to autonomously locate and service parked vehicles using LiDAR and camera-based perception.</p>
+                    </div>
+                    <div class="project-footer">
+                        <div class="project-language">
+                            <span class="language-dot" style="background-color: #f34b7d"></span>
+                            <span>ROS 2, LiDAR</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/vivek-049" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">Image-Based Visual Servoing (IBVS) Arm Control</h3>
+                        <p class="project-description">Integrated YOLOv8 with stereo camera system for object detection and pose estimation for robotic grasping. Optimized disparity map generation using TensorRT for real-time control loops.</p>
+                    </div>
+                    <div class="project-footer">
+                        <div class="project-language">
+                            <span class="language-dot" style="background-color: #3572A5"></span>
+                            <span>Python, ROS, YOLOv8</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="Object Grasping using Kinova Robot Arm.pdf" target="_blank" aria-label="Presentation"><i class="fas fa-file-pdf"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
