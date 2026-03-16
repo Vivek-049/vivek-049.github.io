@@ -276,6 +276,32 @@ section {
     background: var(--bg-light);
 }
 
+.about-content-grid {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 3rem;
+    align-items: start;
+    margin-bottom: 3rem;
+}
+
+.about-image {
+    position: relative;
+}
+
+.profile-img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    object-fit: cover;
+    border: 3px solid var(--border-color);
+    transition: var(--transition);
+}
+
+.profile-img:hover {
+    transform: scale(1.02);
+    border-color: var(--primary-color);
+}
+
 .about-content {
     display: grid;
     gap: 2rem;
@@ -699,6 +725,16 @@ section {
 
     .section-title {
         font-size: 1.75rem;
+    }
+
+    .about-content-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .about-image {
+        max-width: 300px;
+        margin: 0 auto;
     }
 
     .projects-grid {
