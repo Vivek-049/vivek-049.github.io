@@ -9,12 +9,12 @@
     --primary-color: #2563eb;
     --secondary-color: #1e40af;
     --accent-color: #dc2626;
-    --bg-light: #ffffff;
-    --bg-gray: #f8fafc;
+    --bg-light: #fafafa;
+    --bg-gray: #f5f5f5;
     --bg-card: #ffffff;
     --text-primary: #1e293b;
     --text-secondary: #64748b;
-    --border-color: #e2e8f0;
+    --border-color: #e5e5e5;
     --hover-bg: #f1f5f9;
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -113,14 +113,15 @@ body {
 
 /* Hero Section */
 .hero {
-    min-height: 100vh;
+    min-height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     background: var(--bg-light);
     position: relative;
     overflow: hidden;
-    padding-top: 80px;
+    padding-top: 120px;
+    padding-bottom: 60px;
 }
 
 .hero::before,
@@ -131,12 +132,13 @@ body {
 .hero-content {
     text-align: center;
     z-index: 1;
+    max-width: 800px;
 }
 
 .hero-title {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 800;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     animation: fadeInUp 0.8s ease-out;
 }
 
@@ -145,25 +147,27 @@ body {
 }
 
 .hero-subtitle {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: var(--text-secondary);
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     animation: fadeInUp 0.8s ease-out 0.2s both;
 }
 
 .hero-description {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: var(--text-secondary);
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     animation: fadeInUp 0.8s ease-out 0.4s both;
+    line-height: 1.6;
 }
 
 .hero-buttons {
     display: flex;
     gap: 1rem;
     justify-content: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     animation: fadeInUp 0.8s ease-out 0.6s both;
+    flex-wrap: wrap;
 }
 
 .btn {
@@ -172,7 +176,13 @@ body {
     text-decoration: none;
     font-weight: 600;
     transition: var(--transition);
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn i {
+    font-size: 1rem;
 }
 
 .btn-primary {
@@ -238,14 +248,14 @@ body {
 
 /* Section Styles */
 section {
-    padding: 5rem 0;
+    padding: 3rem 0;
 }
 
 .section-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 700;
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     position: relative;
 }
 
@@ -268,14 +278,14 @@ section {
 
 .about-content {
     display: grid;
-    gap: 3rem;
+    gap: 2rem;
 }
 
 .about-text p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: var(--text-secondary);
-    margin-bottom: 1rem;
-    line-height: 1.8;
+    margin-bottom: 0.75rem;
+    line-height: 1.7;
 }
 
 .about-stats {
@@ -319,14 +329,14 @@ section {
 .publications-highlight {
     background: var(--bg-card);
     border-radius: 1rem;
-    padding: 2rem;
-    margin-bottom: 3rem;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
     border: 1px solid var(--border-color);
 }
 
 .publications-title {
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
     color: var(--text-primary);
     display: flex;
     align-items: center;
@@ -340,12 +350,12 @@ section {
 .publications-list {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 .publication-item {
     background: var(--bg-gray);
-    padding: 1.5rem;
+    padding: 1.25rem;
     border-radius: 0.75rem;
     border: 1px solid var(--border-color);
     display: flex;
@@ -362,7 +372,7 @@ section {
 }
 
 .pub-content h4 {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: var(--text-primary);
     margin-bottom: 0.5rem;
     line-height: 1.4;
@@ -370,13 +380,13 @@ section {
 
 .pub-authors {
     color: var(--text-secondary);
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     margin-bottom: 0.25rem;
 }
 
 .pub-venue {
     color: var(--text-secondary);
-    font-size: 0.9rem;
+    font-size: 0.85rem;
 }
 
 .pub-venue strong {
@@ -386,9 +396,9 @@ section {
 .pub-badge {
     background: rgba(37, 99, 235, 0.1);
     color: var(--primary-color);
-    padding: 0.5rem 1rem;
+    padding: 0.4rem 0.8rem;
     border-radius: 0.5rem;
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     font-weight: 600;
     white-space: nowrap;
     border: 1px solid rgba(37, 99, 235, 0.2);
@@ -670,25 +680,25 @@ section {
     }
 
     .hero-title {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .hero-subtitle {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .hero-buttons {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
 
     .btn {
-        width: 100%;
-        max-width: 300px;
+        padding: 0.75rem 1.5rem;
+        font-size: 0.9rem;
     }
 
     .section-title {
-        font-size: 2rem;
+        font-size: 1.75rem;
     }
 
     .projects-grid {
