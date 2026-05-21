@@ -41,9 +41,9 @@
                     </div>
                     <h3 class="intro-heading">Bio</h3>
                     <p>I'm a robotics researcher pursuing my MS in Robotics at the University of Minnesota, working at the intersection of computer vision, deep learning, and autonomous systems. My research focuses on developing <strong>Vision-Language and Vision-Language-Action (VLM/VLA)</strong> models for autonomous decision-making and teleoperation.</p>
-                    <p>Currently, I work as a Graduate Research Assistant at UMN's Networking, Mobile, and AI Research Lab under <strong>Prof. Zhi-Li Zhang</strong>, where I'm implementing and fine-tuning VLAs for end-to-end autonomous driving and developing VLM-based reasoning frameworks using Qwen-VL models and NVIDIA Cosmos for proactive scene escalation in teleoperation scenarios. I've also developed an ADAS suite with real-time inference via TensorRT/ONNX acceleration and integrated complete autonomy stacks in ROS 2 for indoor navigation.</p>
-                    <p>I'm also investigating inverse problems in computer vision using generative models at the <strong>GLOVEX Lab</strong> with <strong>Prof. Ju Sun</strong>, working on solving inverse problems using diffusion and flow-matching models for image reconstruction from incomplete observations.</p>
-                    <p>My work spans across autonomous driving, robotic manipulation, VLA and VLM models, end-to-end systems, and AI-driven perception. I've published at <strong>CVPR Workshop 2026</strong>, with additional papers under review at <strong>IROS 2026</strong> and <strong>NeurIPS 2026</strong>.</p>
+                    <p>Currently, I work as a Graduate Research Assistant at UMN's Networking, Mobile, and AI Research Lab under <strong>Prof. Zhi-Li Zhang</strong>, where I'm implementing and fine-tuning VLAs for end-to-end autonomous driving targeting the AgileX Hunter 2.0 and Chrysler Pacifica. I built a VLM-based reasoning framework leveraging Qwen-VL models and NVIDIA Cosmos, fine-tuned on nuScenes via LoRA and DPO alignment to enable proactive scene escalation. I've also developed an ADAS suite and a video prediction framework trained on BDD100K to compensate for network latency in teleoperation.</p>
+                    <p>I'm also investigating inverse problems in computer vision using generative models at the <strong>GLOVEX Lab</strong> with <strong>Prof. Ju Sun</strong>. My research involves blind inpainting using unsupervised and zero-shot reconstruction methods with pre-trained diffusion and flow-matching models, and designing sparsity-driven frameworks using SCAD loss-based optimization for robust image restoration.</p>
+                    <p>My work spans autonomous driving, robotic manipulation, VLA and VLM models, end-to-end systems, and AI-driven perception. I've published at <strong>CVPR Workshop 2026</strong>, with additional papers under review at <strong>IROS 2026</strong> and <strong>NeurIPS 2026</strong>.</p>
                 </div>
                 <div class="intro-image">
                     <img src="profile.jpg" alt="Vivek Kumar" class="profile-img">
@@ -108,13 +108,13 @@
 
                 <div class="project-card featured">
                     <div class="project-header">
-                        <h3 class="project-title">Autonomy Stack Integration for AgileX Hunter 2.0</h3>
-                        <p class="project-description">Integrated a complete autonomy stack in ROS 2 for the AgileX Hunter 2.0, utilizing ORB-SLAM for visual-inertial localization and LiDAR-based SLAM to generate and navigate within high-fidelity pre-built maps for indoor environments.</p>
+                        <h3 class="project-title">Full-Stack Autonomous Navigation System for AgileX Hunter 2.0</h3>
+                        <p class="project-description">Developed a production-ready modular ROS 2 autonomy stack integrating NDT-OMP LiDAR localization, D*+ path planning, and collision avoidance for autonomous indoor navigation using RobotSense LiDAR in pre-mapped environments. Built collision avoidance pipeline using OBB-voxel intersection tests against octomap with automatic replanning capabilities and YAML-based configuration for rapid deployment.</p>
                     </div>
                     <div class="project-footer">
                         <div class="project-language">
                             <span class="language-dot" style="background-color: #f34b7d"></span>
-                            <span>ROS 2, ORB-SLAM, LiDAR</span>
+                            <span>ROS 2, C++, Python</span>
                         </div>
                         <div class="project-links">
                             <a href="https://github.com/vivek-049" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
@@ -156,64 +156,16 @@
 
                 <div class="project-card featured">
                     <div class="project-header">
-                        <h3 class="project-title">Generative Video Prediction for Latency Compensation</h3>
-                        <p class="project-description">Developed a generative video prediction framework to compensate for 100ms+ network latency in teleoperation, utilizing future-frame prediction to maintain real-time visual feedback during remote driving.</p>
+                        <h3 class="project-title">Video Prediction Framework for Latency Compensation</h3>
+                        <p class="project-description">Developed a video prediction framework by training an encoder-decoder architecture on BDD100K dataset to compensate for 100ms+ network latency in teleoperation, utilizing future-frame prediction to maintain real-time visual feedback during remote driving.</p>
                     </div>
                     <div class="project-footer">
                         <div class="project-language">
                             <span class="language-dot" style="background-color: #3572A5"></span>
-                            <span>Deep Learning, PyTorch</span>
+                            <span>PyTorch, Deep Learning</span>
                         </div>
                         <div class="project-links">
                             <a href="GenAI4 For Teleoperation.pdf" target="_blank" aria-label="Presentation"><i class="fas fa-file-pdf"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card featured">
-                    <div class="project-header">
-                        <h3 class="project-title">RL-Based Intersection Alert System</h3>
-                        <p class="project-description">Designed a Proximal Policy Optimization (PPO) based RL system for multi-vehicle coordination at signal-free 3-way and 4-way intersections using CARLA simulator, modeling state features including speed, distance, and heading.</p>
-                    </div>
-                    <div class="project-footer">
-                        <div class="project-language">
-                            <span class="language-dot" style="background-color: #3572A5"></span>
-                            <span>Python, PPO, CARLA</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="LRRB Alert System [March 2026].pdf" target="_blank" aria-label="Presentation"><i class="fas fa-file-pdf"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3 class="project-title">Semantic 3D Reconstruction for Indoor AI Agents</h3>
-                        <p class="project-description">Designed a 3D semantic reconstruction pipeline from RGB-D sequences integrating instance segmentation, PnP-based pose estimation, and point cloud fusion. Implemented point-to-point ICP from scratch.</p>
-                    </div>
-                    <div class="project-footer">
-                        <div class="project-language">
-                            <span class="language-dot" style="background-color: #3572A5"></span>
-                            <span>ROS 2, YOLO, OpenCV</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/vivek-049" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3 class="project-title">Autonomous Drone 3D Mapping with Stereo SLAM</h3>
-                        <p class="project-description">Developed stereo SLAM pipeline for GPS-denied indoor navigation using PX4, Isaac ROS depth segmentation. Achieved sub-2ms inference latency with TensorRT optimization on custom stereo cameras.</p>
-                    </div>
-                    <div class="project-footer">
-                        <div class="project-language">
-                            <span class="language-dot" style="background-color: #f34b7d"></span>
-                            <span>PX4, Isaac ROS, SLAM</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="IRS Project Presentation_ Autonomous Drone 3D Mapping with Stereo SLAM.pdf" target="_blank" aria-label="Presentation"><i class="fas fa-file-pdf"></i></a>
                         </div>
                     </div>
                 </div>
@@ -236,29 +188,13 @@
 
                 <div class="project-card">
                     <div class="project-header">
-                        <h3 class="project-title">Image-Based Visual Servoing (IBVS) Arm Control</h3>
-                        <p class="project-description">Integrated YOLOv8 with stereo camera system for object detection and pose estimation for robotic grasping. Optimized disparity map generation using TensorRT for real-time control loops.</p>
+                        <h3 class="project-title">Robot Manipulation via Action Chunking Transformers in ManiSkill</h3>
+                        <p class="project-description">Built an end-to-end imitation learning pipeline using Action Chunking Transformer (ACT) architecture to train robot arm manipulation policy on RGBD observations, achieving 95%+ success rate on PickCube task with 30K training iterations. Trained on HuggingFace PickCube-v1 dataset, implementing trajectory replay and video-based evaluation pipeline.</p>
                     </div>
                     <div class="project-footer">
                         <div class="project-language">
                             <span class="language-dot" style="background-color: #3572A5"></span>
-                            <span>Python, ROS, YOLOv8</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="Object Grasping using Kinova Robot Arm.pdf" target="_blank" aria-label="Presentation"><i class="fas fa-file-pdf"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3 class="project-title">Autonomous Robotic Manipulation via OpenVLA</h3>
-                        <p class="project-description">Implemented a Vision-Language-Action (VLA) pipeline using OpenVLA on an AgileX Piper 6-DOF arm to perform simple manipulation tasks, bridging natural language commands with robotic actions.</p>
-                    </div>
-                    <div class="project-footer">
-                        <div class="project-language">
-                            <span class="language-dot" style="background-color: #3572A5"></span>
-                            <span>PyTorch, ROS 2, AgileX Piper</span>
+                            <span>Python, PyTorch, ManiSkill</span>
                         </div>
                         <div class="project-links">
                             <a href="https://github.com/vivek-049" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
@@ -268,13 +204,13 @@
 
                 <div class="project-card">
                     <div class="project-header">
-                        <h3 class="project-title">Robot Manipulation via Action Chunking Transformers</h3>
-                        <p class="project-description">Developed an end-to-end imitation learning pipeline using Action Chunking Transformers (ACT) policy in ManiSkill to enable 6-DOF arms to perform complex manipulation tasks through behavioral cloning.</p>
+                        <h3 class="project-title">Multi-Modal Diffusion based Driving Policy</h3>
+                        <p class="project-description">Developed a lightweight Vision-Language-Action (VLA) diffusion policy utilizing a custom CNN-Transformer architecture to predict autonomous trajectories from natural language instructions. Implemented 5-step Action Chunking to improve multimodal trajectory prediction and mitigate mode collapse.</p>
                     </div>
                     <div class="project-footer">
                         <div class="project-language">
                             <span class="language-dot" style="background-color: #3572A5"></span>
-                            <span>PyTorch, ManiSkill</span>
+                            <span>Python, PyTorch</span>
                         </div>
                         <div class="project-links">
                             <a href="https://github.com/vivek-049" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
@@ -302,36 +238,37 @@
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3><i class="fas fa-robot"></i> Simulation & Tools</h3>
+                    <h3><i class="fas fa-brain"></i> AI</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Vision-Language Models (VLMs)</span>
+                        <span class="skill-tag">Vision-Language-Action (VLAs)</span>
+                        <span class="skill-tag">Diffusion Models</span>
+                        <span class="skill-tag">Imitation Learning</span>
+                        <span class="skill-tag">Reinforcement Learning</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-robot"></i> Robotics & Hardware</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">SLAM</span>
+                        <span class="skill-tag">Path Planning</span>
+                        <span class="skill-tag">Sensor Fusion</span>
+                        <span class="skill-tag">Camera</span>
+                        <span class="skill-tag">LiDAR</span>
+                        <span class="skill-tag">AgileX Rover</span>
+                        <span class="skill-tag">AgileX Piper Arm</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Simulation & Tools</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">Isaac Sim</span>
                         <span class="skill-tag">Gazebo</span>
+                        <span class="skill-tag">Rviz</span>
+                        <span class="skill-tag">MoveIt</span>
                         <span class="skill-tag">Docker</span>
                         <span class="skill-tag">SolidWorks</span>
-                        <span class="skill-tag">TensorRT</span>
-                        <span class="skill-tag">ONNX</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-brain"></i> AI & Deep Learning</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">VLM/VLA Models</span>
-                        <span class="skill-tag">Diffusion Models</span>
-                        <span class="skill-tag">YOLO (v8/v11)</span>
-                        <span class="skill-tag">Transformers</span>
-                        <span class="skill-tag">Reinforcement Learning</span>
-                        <span class="skill-tag">DPO/LoRA Fine-tuning</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-eye"></i> Computer Vision & Perception</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Object Detection & Tracking</span>
-                        <span class="skill-tag">Lane Detection (UFLD)</span>
-                        <span class="skill-tag">BEV Perception</span>
-                        <span class="skill-tag">SLAM (ORB/LiDAR)</span>
-                        <span class="skill-tag">Sensor Fusion</span>
-                        <span class="skill-tag">Stereo Vision</span>
+                        <span class="skill-tag">Linux</span>
                     </div>
                 </div>
             </div>
