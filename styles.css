@@ -362,6 +362,40 @@ section {
     color: var(--primary-color);
 }
 
+.pub-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.75rem;
+}
+
+.pub-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0.4rem 0.8rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 0.4rem;
+    transition: var(--transition);
+}
+
+.pub-link:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+.pub-link i {
+    font-size: 1rem;
+}
+
+.pub-link:has(.fa-youtube):hover {
+    background: #FF0000;
+    border-color: #FF0000;
+}
+
 .pub-badge {
     background: rgba(37, 99, 235, 0.1);
     color: var(--primary-color);
