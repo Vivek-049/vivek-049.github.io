@@ -324,7 +324,7 @@ section {
 
 .publication-item {
     background: var(--bg-gray);
-    padding: 1.25rem;
+    padding: 1.5rem;
     border-radius: 0.75rem;
     border: 1px solid var(--border-color);
     display: flex;
@@ -371,29 +371,44 @@ section {
 .pub-link {
     display: inline-flex;
     align-items: center;
-    gap: 0.4rem;
-    color: var(--primary-color);
+    gap: 0.5rem;
     text-decoration: none;
-    font-size: 0.9rem;
-    font-weight: 500;
-    padding: 0.4rem 0.8rem;
-    border: 1px solid var(--primary-color);
-    border-radius: 0.4rem;
-    transition: var(--transition);
-}
-
-.pub-link:hover {
-    background: var(--primary-color);
-    color: white;
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 0.6rem 1.2rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .pub-link i {
-    font-size: 1rem;
+    font-size: 1.1rem;
+}
+
+/* Poster link - Purple/Violet theme */
+.pub-link:has(.fa-file-image) {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+}
+
+.pub-link:has(.fa-file-image):hover {
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+/* Video link - Red/YouTube theme */
+.pub-link:has(.fa-youtube) {
+    background: linear-gradient(135deg, #FF0000 0%, #CC0000 100%);
+    color: white;
+    border: none;
 }
 
 .pub-link:has(.fa-youtube):hover {
-    background: #FF0000;
-    border-color: #FF0000;
+    background: linear-gradient(135deg, #CC0000 0%, #FF0000 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 0, 0, 0.4);
 }
 
 .pub-badge {
@@ -822,6 +837,15 @@ section {
 
     .pub-badge {
         align-self: flex-start;
+    }
+
+    .pub-links {
+        flex-wrap: wrap;
+    }
+
+    .pub-link {
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
     }
 }
 
