@@ -16,7 +16,6 @@
             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link">About</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <div class="hamburger">
@@ -39,11 +38,29 @@
                         <a href="https://github.com/vivek-049" target="_blank"><i class="fab fa-github"></i> GitHub</a>
                         <a href="https://www.linkedin.com/in/vivek-kumar-robotics/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
                     </div>
-                    <h3 class="intro-heading">Bio</h3>
-                    <p>I'm a robotics researcher pursuing my MS in Robotics at the University of Minnesota, working at the intersection of computer vision, deep learning, and autonomous systems. My research focuses on developing <strong>Vision-Language and Vision-Language-Action (VLM/VLA)</strong> models for autonomous decision-making and teleoperation.</p>
-                    <p>Currently, I work as a Graduate Research Assistant at UMN's Networking, Mobile, and AI Research Lab under <strong>Prof. Zhi-Li Zhang</strong>, where I'm implementing and fine-tuning VLAs for end-to-end autonomous driving targeting the AgileX Hunter 2.0 and Chrysler Pacifica. I built a VLM-based reasoning framework leveraging Qwen-VL models and NVIDIA Cosmos, fine-tuned on nuScenes via LoRA and DPO alignment to enable proactive scene escalation. I've also developed an ADAS suite and a video prediction framework trained on BDD100K to compensate for network latency in teleoperation.</p>
-                    <p>I'm also investigating inverse problems in computer vision using generative models at the <strong>GLOVEX Lab</strong> with <strong>Prof. Ju Sun</strong>. My research involves blind inpainting using unsupervised and zero-shot reconstruction methods with pre-trained diffusion and flow-matching models, and designing sparsity-driven frameworks using SCAD loss-based optimization for robust image restoration.</p>
-                    <p>My work spans autonomous driving, robotic manipulation, VLA and VLM models, end-to-end systems, and AI-driven perception. I've published at <strong>CVPR Workshop 2026</strong>, with additional papers under review at <strong>IROS 2026</strong> and <strong>NeurIPS 2026</strong>.</p>
+                    <h3 class="intro-heading">About</h3>
+                    <p>MS Robotics student at University of Minnesota working on Vision-Language-Action (VLA) models for autonomous driving and teleoperation. Graduate Research Assistant at UMN's Networking, Mobile, and AI Research Lab under <strong>Prof. Zhi-Li Zhang</strong>, developing end-to-end autonomous systems for AgileX Hunter 2.0 and Chrysler Pacifica. Also researching inverse problems in computer vision using diffusion models at <strong>GLOVEX Lab</strong> with <strong>Prof. Ju Sun</strong>.</p>
+                    <p>Published at <strong>CVPR Workshop 2026</strong>, with papers under review at <strong>IROS 2026</strong> and <strong>NeurIPS 2026</strong>.</p>
+                    
+                    <h3 class="intro-heading">Skills</h3>
+                    <div class="skills-inline">
+                        <div class="skill-row">
+                            <span class="skill-label">Programming:</span>
+                            <span class="skill-items">Python, C++, ROS 2, PyTorch, OpenCV, Hugging Face</span>
+                        </div>
+                        <div class="skill-row">
+                            <span class="skill-label">AI:</span>
+                            <span class="skill-items">VLMs, VLAs, Diffusion Models, Imitation Learning, Reinforcement Learning</span>
+                        </div>
+                        <div class="skill-row">
+                            <span class="skill-label">Robotics:</span>
+                            <span class="skill-items">SLAM, Path Planning, Sensor Fusion, Camera, LiDAR, AgileX Rover, AgileX Piper Arm</span>
+                        </div>
+                        <div class="skill-row">
+                            <span class="skill-label">Tools:</span>
+                            <span class="skill-items">Isaac Sim, Gazebo, Rviz, MoveIt, Docker, SolidWorks, Linux</span>
+                        </div>
+                    </div>
                 </div>
                 <div class="intro-image">
                     <img src="profile.jpg" alt="Vivek Kumar" class="profile-img">
@@ -89,7 +106,7 @@
             </div>
 
             <div class="projects-grid">
-                <!-- Network Lab Projects -->
+                <!-- Priority Projects -->
                 <div class="project-card featured">
                     <div class="project-header">
                         <h3 class="project-title">VLA Models for End-to-End Autonomous Driving</h3>
@@ -101,6 +118,7 @@
                             <span>VLA, PyTorch, ROS 2</span>
                         </div>
                         <div class="project-links">
+                            <a href="#" target="_blank" aria-label="Video" class="video-link"><i class="fab fa-youtube"></i></a>
                             <a href="#publications" aria-label="Publications"><i class="fas fa-file-alt"></i></a>
                         </div>
                     </div>
@@ -117,70 +135,7 @@
                             <span>ROS 2, C++, Python</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/vivek-049" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card featured">
-                    <div class="project-header">
-                        <h3 class="project-title">Advanced Driver Assistance System (ADAS)</h3>
-                        <p class="project-description">Developed an ADAS suite (FCWS, LDWS, LKAS) using YOLOv8m for detection, ByteTrack for trajectory tracking, and UFLD-v2 (ResNet-18) for lane detection, achieving real-time inference via TensorRT/ONNX acceleration.</p>
-                    </div>
-                    <div class="project-footer">
-                        <div class="project-language">
-                            <span class="language-dot" style="background-color: #f34b7d"></span>
-                            <span>ROS 2, YOLOv8, TensorRT</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="Advanced Driver Assistance ADAS.pdf" target="_blank" aria-label="Presentation"><i class="fas fa-file-pdf"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card featured">
-                    <div class="project-header">
-                        <h3 class="project-title">Bird's-Eye-View (BEV) Perception Pipeline</h3>
-                        <p class="project-description">Implemented a real-time Bird's-Eye-View (BEV) perception pipeline using ROS 2, utilizing Inverse Perspective Mapping (IPM) to provide teleoperators with a seamless surround-view, significantly reducing perspective distortion.</p>
-                    </div>
-                    <div class="project-footer">
-                        <div class="project-language">
-                            <span class="language-dot" style="background-color: #3572A5"></span>
-                            <span>ROS 2, IPM, Computer Vision</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="Perception in Bird's eye view (BEV) using Inverse perspective Mapping (IPM).pdf" target="_blank" aria-label="Presentation"><i class="fas fa-file-pdf"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card featured">
-                    <div class="project-header">
-                        <h3 class="project-title">Video Prediction Framework for Latency Compensation</h3>
-                        <p class="project-description">Developed a video prediction framework by training an encoder-decoder architecture on BDD100K dataset to compensate for 100ms+ network latency in teleoperation, utilizing future-frame prediction to maintain real-time visual feedback during remote driving.</p>
-                    </div>
-                    <div class="project-footer">
-                        <div class="project-language">
-                            <span class="language-dot" style="background-color: #3572A5"></span>
-                            <span>PyTorch, Deep Learning</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="GenAI4 For Teleoperation.pdf" target="_blank" aria-label="Presentation"><i class="fas fa-file-pdf"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3 class="project-title">On-Demand Mobile EV Charging Robot (WeZZOn)</h3>
-                        <p class="project-description">Worked on an autonomous EV charging-as-a-service platform to mitigate fixed infrastructure barriers and validated it through real-world parking lot testing using a battery-integrated AgileX Hunter platform.</p>
-                    </div>
-                    <div class="project-footer">
-                        <div class="project-language">
-                            <span class="language-dot" style="background-color: #f34b7d"></span>
-                            <span>ROS 2, LiDAR, AgileX</span>
-                        </div>
-                        <div class="project-links">
+                            <a href="#" target="_blank" aria-label="Video" class="video-link"><i class="fab fa-youtube"></i></a>
                             <a href="https://github.com/vivek-049" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
@@ -197,6 +152,7 @@
                             <span>Python, PyTorch, ManiSkill</span>
                         </div>
                         <div class="project-links">
+                            <a href="#" target="_blank" aria-label="Video" class="video-link"><i class="fab fa-youtube"></i></a>
                             <a href="https://github.com/vivek-049" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
@@ -213,62 +169,77 @@
                             <span>Python, PyTorch</span>
                         </div>
                         <div class="project-links">
+                            <a href="#" target="_blank" aria-label="Video" class="video-link"><i class="fab fa-youtube"></i></a>
                             <a href="https://github.com/vivek-049" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">Skills & Technologies</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> Programming & Frameworks</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">C++</span>
-                        <span class="skill-tag">ROS 2</span>
-                        <span class="skill-tag">PyTorch</span>
-                        <span class="skill-tag">OpenCV</span>
-                        <span class="skill-tag">Hugging Face</span>
+                <div class="project-card featured">
+                    <div class="project-header">
+                        <h3 class="project-title">Advanced Driver Assistance System (ADAS)</h3>
+                        <p class="project-description">Developed an ADAS suite (FCWS, LDWS, LKAS) using YOLOv8m for detection, ByteTrack for trajectory tracking, and UFLD-v2 (ResNet-18) for lane detection, achieving real-time inference via TensorRT/ONNX acceleration.</p>
+                    </div>
+                    <div class="project-footer">
+                        <div class="project-language">
+                            <span class="language-dot" style="background-color: #f34b7d"></span>
+                            <span>ROS 2, YOLOv8, TensorRT</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank" aria-label="Video" class="video-link"><i class="fab fa-youtube"></i></a>
+                            <a href="Advanced Driver Assistance ADAS.pdf" target="_blank" aria-label="Presentation"><i class="fas fa-file-pdf"></i></a>
+                        </div>
                     </div>
                 </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-brain"></i> AI</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Vision-Language Models (VLMs)</span>
-                        <span class="skill-tag">Vision-Language-Action (VLAs)</span>
-                        <span class="skill-tag">Diffusion Models</span>
-                        <span class="skill-tag">Imitation Learning</span>
-                        <span class="skill-tag">Reinforcement Learning</span>
+
+                <div class="project-card featured">
+                    <div class="project-header">
+                        <h3 class="project-title">Video Prediction Framework for Latency Compensation</h3>
+                        <p class="project-description">Developed a video prediction framework by training an encoder-decoder architecture on BDD100K dataset to compensate for 100ms+ network latency in teleoperation, utilizing future-frame prediction to maintain real-time visual feedback during remote driving.</p>
+                    </div>
+                    <div class="project-footer">
+                        <div class="project-language">
+                            <span class="language-dot" style="background-color: #3572A5"></span>
+                            <span>PyTorch, Deep Learning</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank" aria-label="Video" class="video-link"><i class="fab fa-youtube"></i></a>
+                            <a href="GenAI4 For Teleoperation.pdf" target="_blank" aria-label="Presentation"><i class="fas fa-file-pdf"></i></a>
+                        </div>
                     </div>
                 </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-robot"></i> Robotics & Hardware</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">SLAM</span>
-                        <span class="skill-tag">Path Planning</span>
-                        <span class="skill-tag">Sensor Fusion</span>
-                        <span class="skill-tag">Camera</span>
-                        <span class="skill-tag">LiDAR</span>
-                        <span class="skill-tag">AgileX Rover</span>
-                        <span class="skill-tag">AgileX Piper Arm</span>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">On-Demand Mobile EV Charging Robot (WeZZOn)</h3>
+                        <p class="project-description">Worked on an autonomous EV charging-as-a-service platform to mitigate fixed infrastructure barriers and validated it through real-world parking lot testing using a battery-integrated AgileX Hunter platform.</p>
+                    </div>
+                    <div class="project-footer">
+                        <div class="project-language">
+                            <span class="language-dot" style="background-color: #f34b7d"></span>
+                            <span>ROS 2, LiDAR, AgileX</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank" aria-label="Video" class="video-link"><i class="fab fa-youtube"></i></a>
+                            <a href="https://github.com/vivek-049" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
                     </div>
                 </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-tools"></i> Simulation & Tools</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Isaac Sim</span>
-                        <span class="skill-tag">Gazebo</span>
-                        <span class="skill-tag">Rviz</span>
-                        <span class="skill-tag">MoveIt</span>
-                        <span class="skill-tag">Docker</span>
-                        <span class="skill-tag">SolidWorks</span>
-                        <span class="skill-tag">Linux</span>
+
+                <div class="project-card featured">
+                    <div class="project-header">
+                        <h3 class="project-title">Bird's-Eye-View (BEV) Perception Pipeline</h3>
+                        <p class="project-description">Implemented a real-time Bird's-Eye-View (BEV) perception pipeline using ROS 2, utilizing Inverse Perspective Mapping (IPM) to provide teleoperators with a seamless surround-view, significantly reducing perspective distortion.</p>
+                    </div>
+                    <div class="project-footer">
+                        <div class="project-language">
+                            <span class="language-dot" style="background-color: #3572A5"></span>
+                            <span>ROS 2, IPM, Computer Vision</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank" aria-label="Video" class="video-link"><i class="fab fa-youtube"></i></a>
+                            <a href="Perception in Bird's eye view (BEV) using Inverse perspective Mapping (IPM).pdf" target="_blank" aria-label="Presentation"><i class="fas fa-file-pdf"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>

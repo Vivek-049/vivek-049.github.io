@@ -179,6 +179,29 @@ body {
     color: var(--text-primary);
 }
 
+.skills-inline {
+    margin-top: 1rem;
+}
+
+.skill-row {
+    display: flex;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+    align-items: flex-start;
+}
+
+.skill-label {
+    color: var(--text-primary);
+    font-weight: 600;
+    min-width: 100px;
+    flex-shrink: 0;
+}
+
+.skill-items {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
 .intro-image {
     position: sticky;
     top: 100px;
@@ -458,6 +481,10 @@ section {
 
 .project-links a:hover {
     color: var(--primary-color);
+}
+
+.project-links .video-link:hover {
+    color: #FF0000;
 }
 
 .loading {
