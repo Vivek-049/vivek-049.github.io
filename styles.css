@@ -491,6 +491,14 @@ section {
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+}
+
+.project-thumbnail img[src*="thumbnails/"] {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .project-thumbnail:hover img {
