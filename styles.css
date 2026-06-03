@@ -161,6 +161,21 @@ body {
     text-decoration: underline;
 }
 
+.intro-links .resume-link {
+    background: var(--primary-color);
+    color: white;
+    padding: 0.4rem 0.9rem;
+    border-radius: 0.4rem;
+    transition: var(--transition);
+}
+
+.intro-links .resume-link:hover {
+    background: var(--secondary-color);
+    text-decoration: none;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(37, 99, 235, 0.3);
+}
+
 .intro-heading {
     font-size: 1.4rem;
     font-weight: 700;
