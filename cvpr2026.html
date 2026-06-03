@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VLM-Driven Proactive Escalation - CVPR 2026</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+            color: #e5e5e5;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background: rgba(26, 26, 26, 0.95);
+            border-radius: 1.5rem;
+            padding: 3rem;
+            border: 1px solid #2a2a2a;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid #2a2a2a;
+        }
+
+        .conference-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 2rem;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            letter-spacing: 0.5px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+            color: #fff;
+        }
+
+        .authors {
+            font-size: 1.1rem;
+            color: #a1a1a1;
+            margin-bottom: 0.5rem;
+        }
+
+        .affiliation {
+            font-size: 1rem;
+            color: #737373;
+        }
+
+        .links-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .link-card {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            padding: 1.5rem;
+            background: rgba(42, 42, 42, 0.5);
+            border: 1px solid #3a3a3a;
+            border-radius: 1rem;
+            text-decoration: none;
+            color: #e5e5e5;
+            transition: all 0.3s ease;
+        }
+
+        .link-card:hover {
+            transform: translateY(-3px);
+            border-color: #2563eb;
+            box-shadow: 0 8px 24px rgba(37, 99, 235, 0.2);
+        }
+
+        .link-icon {
+            font-size: 2.5rem;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 1rem;
+            flex-shrink: 0;
+        }
+
+        .link-icon.paper {
+            background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+        }
+
+        .link-icon.poster {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .link-icon.portfolio {
+            background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+        }
+
+        .link-icon.linkedin {
+            background: linear-gradient(135deg, #0077b5 0%, #005582 100%);
+        }
+
+        .link-content h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .link-content p {
+            font-size: 0.9rem;
+            color: #a1a1a1;
+        }
+
+        .footer {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid #2a2a2a;
+            color: #737373;
+            font-size: 0.9rem;
+        }
+
+        .footer a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                padding: 2rem 1.5rem;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .link-card {
+                padding: 1rem;
+            }
+
+            .link-icon {
+                font-size: 2rem;
+                width: 50px;
+                height: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="conference-badge">CVPR 2026 Workshop</div>
+            <h1>VLM-Driven Proactive Escalation for Tele-operations in Autonomous Vehicles</h1>
+            <p class="authors">Vivek Kumar, et al.</p>
+            <p class="affiliation">University of Minnesota, Twin Cities</p>
+        </div>
+
+        <div class="links-grid">
+            <a href="https://drive.google.com/file/d/156DK4H5Ht06kgXR8-hEgV4QPAvxpBSk1/view?usp=sharing" target="_blank" class="link-card">
+                <div class="link-icon paper">
+                    <i class="fas fa-file-pdf"></i>
+                </div>
+                <div class="link-content">
+                    <h3>Read Paper</h3>
+                    <p>View the full paper (PDF)</p>
+                </div>
+            </a>
+
+            <a href="https://drive.google.com/drive/folders/1ZIYUb9s8DGxL0cK2LlRArC3_lwUj1Iv0" target="_blank" class="link-card">
+                <div class="link-icon poster">
+                    <i class="fas fa-file-image"></i>
+                </div>
+                <div class="link-content">
+                    <h3>Presentation Materials</h3>
+                    <p>Poster, slides, and video</p>
+                </div>
+            </a>
+
+            <a href="https://vivek-049.github.io/" target="_blank" class="link-card">
+                <div class="link-icon portfolio">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <div class="link-content">
+                    <h3>Portfolio</h3>
+                    <p>More projects and research</p>
+                </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/vivek-kumar-robotics/" target="_blank" class="link-card">
+                <div class="link-icon linkedin">
+                    <i class="fab fa-linkedin"></i>
+                </div>
+                <div class="link-content">
+                    <h3>LinkedIn</h3>
+                    <p>Connect professionally</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="footer">
+            <p>Scan the QR code to access this page • <a href="mailto:Kuma0355@umn.edu">Kuma0355@umn.edu</a></p>
+        </div>
+    </div>
+</body>
+</html>
