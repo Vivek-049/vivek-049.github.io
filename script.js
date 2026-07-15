@@ -60,7 +60,7 @@ const observer = new IntersectionObserver((entries) => {
 // Observe all sections and cards
 document.addEventListener('DOMContentLoaded', () => {
     // Set up scroll animations
-    const animatedElements = document.querySelectorAll('.contact-card, .project-card, .publication-item, .skill-row');
+    const animatedElements = document.querySelectorAll('.contact-card, .project-card, .publication-item');
     animatedElements.forEach(el => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(30px)';
