@@ -30,8 +30,6 @@
 
     <!-- Hero -->
     <section id="home" class="hero-about">
-        <img src="IMG-20260513-WA0045~2.jpg" alt="Vivek Kumar with an AgileX robotics platform" class="hero-photo">
-        <div class="hero-scrim"></div>
         <div class="container">
             <div class="intro-grid">
                 <div class="intro-text">
@@ -61,6 +59,13 @@
                         </div>
                     </div>
                 </div>
+                <aside class="hero-visual" aria-label="Vivek with an AgileX robotics platform">
+                    <img src="IMG-20260513-WA0045~2.jpg" alt="Vivek Kumar with an AgileX robotics platform">
+                    <div class="hero-visual-caption">
+                        <span>Autonomy hardware demo</span>
+                        <strong>AgileX robotics platform</strong>
+                    </div>
+                </aside>
             </div>
         </div>
     </section>
@@ -162,7 +167,7 @@
 
             <div class="projects-grid">
                 <!-- Priority Projects -->
-                <div class="project-card featured">
+                <div class="project-card featured vla-card">
                     <a href="https://github.com/vivek-049" target="_blank" class="project-thumbnail">
                         <img src="IMG-20260513-WA0045~2.jpg" alt="VLA autonomous driving research setup">
                         <div class="play-overlay">
@@ -171,15 +176,16 @@
                         </div>
                     </a>
                     <div class="project-header">
-                        <h3 class="project-title">VLA Models for End-to-End Autonomous Driving</h3>
-                        <p class="project-description">Working on implementing and fine-tuning Vision-Language-Action
-                            (VLA) models for end-to-end autonomous driving, targeting indoor navigation on the AgileX
-                            Hunter 2.0 and on-road performance for the Chrysler Pacifica.</p>
+                        <p class="project-kicker">Current research</p>
+                        <h3 class="project-title">Long-Horizon Sign-Guided VLA for Mapless Navigation</h3>
+                        <p class="project-description">Developing a sign-guided Vision-Language-Action framework for
+                            long-horizon mapless navigation, using semantic scene understanding and language reasoning
+                            to move toward user-specified destinations without relying on a fixed map.</p>
                     </div>
                     <div class="project-footer">
                         <div class="project-language">
                             <span class="language-dot" style="background-color: #3572A5"></span>
-                            <span>VLA, PyTorch, ROS 2</span>
+                            <span>VLA, VLM Reasoning, ROS 2</span>
                         </div>
                         <div class="project-links">
                             <a href="#publications" aria-label="Publications"><i class="fas fa-file-alt"></i></a>
