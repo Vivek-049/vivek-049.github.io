@@ -1,15 +1,20 @@
 // Mobile Navigation Toggle
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
+const navbar = document.querySelector('.navbar');
 
 hamburger.addEventListener('click', () => {
     navMenu.classList.toggle('active');
+    hamburger.classList.toggle('active');
+    navbar.classList.toggle('nav-open', navMenu.classList.contains('active'));
 });
 
 // Close mobile menu when clicking on a link
 document.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', () => {
         navMenu.classList.remove('active');
+        hamburger.classList.remove('active');
+        navbar.classList.remove('nav-open');
     });
 });
 
@@ -30,13 +35,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // Navbar background on scroll
 window.addEventListener('scroll', () => {
-    const navbar = document.querySelector('.navbar');
     if (window.scrollY > 50) {
-        navbar.style.background = 'rgba(10, 10, 10, 0.98)';
-        navbar.style.boxShadow = '0 2px 8px rgba(0, 0, 0, 0.5)';
+        navbar.classList.add('scrolled');
     } else {
-        navbar.style.background = 'rgba(10, 10, 10, 0.95)';
-        navbar.style.boxShadow = '0 1px 3px rgba(0, 0, 0, 0.3)';
+        navbar.classList.remove('scrolled');
     }
 });
 
@@ -58,7 +60,7 @@ const observer = new IntersectionObserver((entries) => {
 // Observe all sections and cards
 document.addEventListener('DOMContentLoaded', () => {
     // Set up scroll animations
-    const animatedElements = document.querySelectorAll('.stat-card, .skill-category, .contact-card, .project-card, .publication-item');
+    const animatedElements = document.querySelectorAll('.contact-card, .project-card, .publication-item, .skill-row');
     animatedElements.forEach(el => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(30px)';
