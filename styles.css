@@ -495,12 +495,6 @@ section {
     transition: transform 320ms ease, filter 320ms ease;
 }
 
-.project-thumbnail img.contain-thumb {
-    padding: 0.85rem;
-    object-fit: contain;
-    background: #fff;
-}
-
 .vla-card .project-thumbnail img {
     object-position: 56% 48%;
 }
