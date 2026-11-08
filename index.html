@@ -4,519 +4,600 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Vivek Kumar - Robot Learning Intern at Factory Intelligence, MS Robotics at the University of Minnesota">
-    <title>Vivek - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Vivek Kumar · Robot Learning</title>
+    <meta name="description"
+        content="Vivek Kumar: Robot Learning Intern at Factory Intelligence and MS Robotics student at the University of Minnesota, working on robot foundation models, VLA policies, imitation learning and RL on real robots.">
+    <link rel="canonical" href="https://vivek-049.github.io/">
+
+    <!-- Link previews (LinkedIn, Slack, email) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vivek-049.github.io/">
+    <meta property="og:title" content="Vivek Kumar · Robot Learning">
+    <meta property="og:description"
+        content="Robot Learning Intern at Factory Intelligence · MS Robotics, University of Minnesota. Robot foundation models, VLAs and RL on real robots.">
+    <meta property="og:image" content="https://vivek-049.github.io/og-card.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Vivek Kumar",
+        "url": "https://vivek-049.github.io/",
+        "image": "https://vivek-049.github.io/vivek-hero.jpg",
+        "jobTitle": "Robot Learning Intern",
+        "worksFor": { "@type": "Organization", "name": "Factory Intelligence" },
+        "alumniOf": [
+            { "@type": "CollegeOrUniversity", "name": "University of Minnesota Twin Cities" },
+            { "@type": "CollegeOrUniversity", "name": "National Institute of Technology Rourkela" }
+        ],
+        "knowsAbout": ["Robot learning", "Vision-Language-Action models", "Imitation learning", "Reinforcement learning", "Robot foundation models"],
+        "sameAs": ["https://www.linkedin.com/in/vivek-kumar-robotics/", "https://github.com/vivek-049"]
+    }
+    </script>
 </head>
 
 <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-brand">Vivek</div>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">About</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+    <header class="site-header">
+        <nav class="nav container" aria-label="Primary">
+            <a href="#about" class="brand"><span class="brand-mark">VK</span>Vivek Kumar</a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+            <div class="nav-actions">
+                <a href="Vivek_Kumar_Resume.pdf" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                    <i class="fas fa-file-lines"></i> Resume
+                </a>
+                <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false"
+                    aria-controls="nav-links">
+                    <span></span><span></span><span></span>
+                </button>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-    <!-- Hero -->
-    <section id="home" class="hero-about">
-        <div class="container">
-            <div class="intro-grid">
-                <div class="intro-text">
-                    <p class="intro-kicker">Robotics portfolio</p>
-                    <h1 class="intro-name">Vivek Kumar</h1>
-                    <p class="intro-headline"><span>Robot learning</span> for real-world manipulation.</p>
-                    <p class="intro-role">Robot Learning Intern @ Factory Intelligence and MS Robotics @ University of Minnesota. I train and deploy robot foundation models, π0.5 / VLA policies, and human-in-the-loop RL on real robot arms.</p>
-                    <div class="intro-links">
-                        <a href="mailto:Kuma0355@umn.edu"><i class="fas fa-envelope"></i> Email</a>
-                        <a href="https://github.com/vivek-049" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                        <a href="https://www.linkedin.com/in/vivek-kumar-robotics/" target="_blank"><i
-                                class="fab fa-linkedin"></i> LinkedIn</a>
-                        <a href="Vivek_Kumar_Resume.pdf" target="_blank" class="resume-link"><i class="fas fa-file-pdf"></i>
-                            Resume</a>
+    <main id="main">
+        <!-- Hero -->
+        <section id="about" class="hero">
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <h1 class="hero-name">Vivek Kumar</h1>
+                    <p class="hero-headline"><span class="accent">Robot learning</span> for <span
+                            class="nowrap">real-world</span> manipulation.</p>
+                    <p class="hero-summary">I train and deploy robot foundation models on real hardware, from π0.5 / VLA
+                        fine-tuning and imitation learning to human-in-the-loop RL for precise, contact-rich tasks.</p>
+                    <ul class="hero-roles">
+                        <li><i class="fas fa-briefcase" aria-hidden="true"></i><span>Robot Learning Intern at
+                                <strong>Factory Intelligence</strong></span></li>
+                        <li><i class="fas fa-graduation-cap" aria-hidden="true"></i><span>MS Robotics at
+                                <strong>University of Minnesota</strong></span></li>
+                    </ul>
+                    <div class="cta-row">
+                        <a href="Vivek_Kumar_Resume.pdf" target="_blank" rel="noopener" class="btn btn-primary">
+                            <i class="fas fa-file-arrow-down"></i> View resume
+                        </a>
+                        <a href="mailto:Kuma0355@umn.edu" class="btn btn-secondary">
+                            <i class="fas fa-envelope"></i> Email me
+                        </a>
+                        <a href="https://www.linkedin.com/in/vivek-kumar-robotics/" target="_blank" rel="noopener"
+                            class="btn btn-secondary"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                        <a href="https://github.com/vivek-049" target="_blank" rel="noopener"
+                            class="btn btn-secondary"><i class="fab fa-github"></i> GitHub</a>
                     </div>
-                    <p class="hero-focus">π0.5 / VLA policies on YAM arms · CVPR 2026 Workshop · Sign-guided VLA navigation</p>
                 </div>
-                <aside class="hero-visual" aria-label="Vivek with an AgileX robotics platform">
-                    <img src="IMG-20260513-WA0045~2.jpg" alt="Vivek Kumar with an AgileX robotics platform">
-                    <div class="hero-visual-caption">
-                        <span>Autonomy hardware demo</span>
-                        <strong>AgileX robotics platform</strong>
-                    </div>
-                </aside>
+                <figure class="hero-photo">
+                    <img src="vivek-hero.jpg" width="900" height="1200"
+                        alt="Vivek Kumar standing next to an AgileX mobile robot at a research demo">
+                    <figcaption>Autonomy hardware demo · AgileX platform</figcaption>
+                </figure>
             </div>
-        </div>
-    </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <h2 class="section-title experience-heading">Experience</h2>
-            <div class="experience-list">
-                <article class="experience-item current">
-                    <div class="experience-meta">
-                        <span class="experience-date">Aug 2026 – Present</span>
-                        <span class="experience-location">Lafayette, IN</span>
+            <div class="container">
+                <dl class="highlights">
+                    <div>
+                        <dt>Multi-hour</dt>
+                        <dd>production runs on a deployed two-arm robotic assembly workcell</dd>
                     </div>
-                    <div class="experience-body">
-                        <h3>Robot Learning Intern <span>· Factory Intelligence</span></h3>
-                        <p class="experience-focus">Robot Foundation Models, VLAs, RL, Real-world Deployment</p>
-                        <ul>
-                            <li>Deployed a robotic assembly workcell with two YAM arms for an electrical fabrication
-                                client, chaining task-specific robot policies via a learned completion flag, with high
-                                success rates and multi-hour production runs.</li>
-                            <li>Mid-training π0.5 on 100+ h of multi-task YAM data to improve downstream fine-tuning,
-                                applying human-in-the-loop RL for precise, contact-rich tasks such as screwing and wire
-                                hooking.</li>
-                            <li>Fine-tuning π-family policies with a joint-torque history token, along with other robot
-                                policies, on 800+ episodes for contact-rich tasks on YAM arms and the Almond Axol, a
-                                wheeled semi-humanoid.</li>
-                            <li>Contributed to FI-OS, the company's in-house robot-learning platform and UI that runs the
-                                full pipeline: onboarding new robots, teleoperation, data collection, training, evals and
+                    <div>
+                        <dt>100+ h</dt>
+                        <dd>of multi-task robot data for π0.5 mid-training</dd>
+                    </div>
+                    <div>
+                        <dt>800+</dt>
+                        <dd>episodes for contact-rich policy fine-tuning</dd>
+                    </div>
+                    <div>
+                        <dt>CVPR '26</dt>
+                        <dd>first-author workshop paper, with 2 more under review</dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section id="experience" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Experience</h2>
+                <div class="timeline">
+                    <article class="role current">
+                        <header class="role-head">
+                            <div>
+                                <h3>Robot Learning Intern</h3>
+                                <p class="role-org"><strong>Factory Intelligence</strong> · Lafayette, IN</p>
+                            </div>
+                            <p class="role-date"><span class="badge">Current</span> Aug 2026 – Present</p>
+                        </header>
+                        <ul class="role-points">
+                            <li>Deployed a <strong>robotic assembly workcell with two YAM arms</strong> for an electrical
+                                fabrication client, chaining task-specific robot policies via a learned completion flag,
+                                with high success rates over <strong>multi-hour production runs</strong>.</li>
+                            <li>Mid-training <strong>π0.5 on 100+ h</strong> of multi-task YAM data to improve downstream
+                                fine-tuning, and applying <strong>human-in-the-loop RL</strong> to precise, contact-rich
+                                tasks such as screwing and wire hooking.</li>
+                            <li>Fine-tuning π-family policies with a <strong>joint-torque history token</strong>, along
+                                with other robot policies, on <strong>800+ episodes</strong> of contact-rich tasks on YAM
+                                arms and the Almond Axol, a wheeled semi-humanoid.</li>
+                            <li>Contributed to <strong>FI-OS</strong>, the company's in-house robot-learning platform
+                                covering robot onboarding, teleoperation, data collection, training, evals and
                                 deployment.</li>
                         </ul>
-                    </div>
-                </article>
-                <article class="experience-item">
-                    <div class="experience-meta">
-                        <span class="experience-date">June 2025 – July 2026</span>
-                        <span class="experience-location">Minneapolis, MN</span>
-                    </div>
-                    <div class="experience-body">
-                        <h3>Graduate Research Assistant <span>· NextGX Lab, University of Minnesota</span></h3>
-                        <p class="experience-focus">Autonomous Driving, VLA, VLMs</p>
-                        <ul>
-                            <li>Built a VLM for proactive escalation in autonomous driving using Qwen3-VL with NVIDIA
-                                Cosmos as the teacher model, fine-tuned on nuScenes via LoRA and DPO, achieving 92.1%
-                                accuracy.</li>
-                            <li>Contributed to a sign-guided Vision-Language-Action framework for long-horizon mapless
-                                navigation that uses semantic scene understanding and language reasoning to reach
-                                user-specified destinations.</li>
+                        <ul class="tags" aria-label="Focus areas">
+                            <li>π0.5 / VLAs</li>
+                            <li>Human-in-the-loop RL</li>
+                            <li>Contact-rich manipulation</li>
+                            <li>Real-world deployment</li>
                         </ul>
-                    </div>
-                </article>
-                <article class="experience-item">
-                    <div class="experience-meta">
-                        <span class="experience-date">Apr 2025 – July 2026</span>
-                        <span class="experience-location">Minneapolis, MN</span>
-                    </div>
-                    <div class="experience-body">
-                        <h3>Graduate Researcher <span>· GLOVEX Lab, University of Minnesota</span></h3>
-                        <p class="experience-focus">Inverse Problems, Diffusion and Flow-matching Models</p>
-                        <ul>
+                    </article>
+
+                    <article class="role">
+                        <header class="role-head">
+                            <div>
+                                <h3>Graduate Research Assistant</h3>
+                                <p class="role-org"><strong>NextGX Lab, University of Minnesota</strong> · Minneapolis,
+                                    MN</p>
+                            </div>
+                            <p class="role-date">June 2025 – July 2026</p>
+                        </header>
+                        <ul class="role-points">
+                            <li>Built a VLM for <strong>proactive escalation</strong> in autonomous driving with
+                                <strong>Qwen3-VL</strong>, using NVIDIA Cosmos as the teacher model and fine-tuning on
+                                nuScenes via <strong>LoRA and DPO</strong> to reach <strong>92.1% accuracy</strong>
+                                (CVPR 2026 Workshop).</li>
+                            <li>Contributed to a <strong>sign-guided Vision-Language-Action framework</strong> for
+                                long-horizon mapless navigation that uses semantic scene understanding and language
+                                reasoning to reach user-specified destinations.</li>
+                        </ul>
+                        <ul class="tags" aria-label="Focus areas">
+                            <li>VLMs</li>
+                            <li>VLA</li>
+                            <li>LoRA / DPO</li>
+                            <li>Autonomous driving</li>
+                        </ul>
+                    </article>
+
+                    <article class="role">
+                        <header class="role-head">
+                            <div>
+                                <h3>Graduate Researcher</h3>
+                                <p class="role-org"><strong>GLOVEX Lab, University of Minnesota</strong> · Minneapolis,
+                                    MN</p>
+                            </div>
+                            <p class="role-date">Apr 2025 – July 2026</p>
+                        </header>
+                        <ul class="role-points">
                             <li>Researched inverse problems using generative priors such as diffusion and flow-matching
                                 models.</li>
-                            <li>Built ZS-PDP, a zero-shot blind inpainting framework that outperforms both SOTA
-                                supervised and zero-shot methods.</li>
+                            <li>Built <strong>ZS-PDP</strong>, a zero-shot blind inpainting framework that outperforms
+                                both SOTA supervised and zero-shot methods (ICLR 2027, under review).</li>
                         </ul>
-                    </div>
-                </article>
-            </div>
-
-            <div class="skills-grid">
-                <div class="skill-group">
-                    <h4>Robot Learning</h4>
-                    <p>Imitation Learning, VLA Policies, ACT, Diffusion Policies, Reinforcement Learning, Teleoperation</p>
-                </div>
-                <div class="skill-group">
-                    <h4>Generative &amp; Foundation Models</h4>
-                    <p>Vision-Language Models, World Models, Diffusion / Flow Matching, LoRA, DPO</p>
-                </div>
-                <div class="skill-group">
-                    <h4>Programming &amp; ML</h4>
-                    <p>Python, C++, PyTorch, Hugging Face, OpenCV, TensorRT, ONNX, Docker</p>
-                </div>
-                <div class="skill-group">
-                    <h4>Robotics &amp; Simulation</h4>
-                    <p>ROS 2, MuJoCo, Isaac Sim, ManiSkill, Linux</p>
+                        <ul class="tags" aria-label="Focus areas">
+                            <li>Diffusion models</li>
+                            <li>Flow matching</li>
+                            <li>Inverse problems</li>
+                        </ul>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title publications-heading">Publications</h2>
+        <!-- Projects -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title">Selected projects</h2>
 
-            <!-- Publications Highlight -->
-            <div id="publications" class="publications-highlight">
-                <div class="publications-list">
-                    <div class="publication-item">
-                        <div class="publication-figure">
-                            <img src="https://img.youtube.com/vi/0QDESYbUcLw/maxresdefault.jpg"
-                                alt="Teleoperation escalation publication preview">
-                            <span>CVPRW'26</span>
-                        </div>
-                        <div class="pub-content">
-                            <h4>VLM-Driven Proactive Escalation for Tele-operations in Autonomous Vehicles</h4>
-                            <p class="pub-authors"><a href="#home">Vivek Kumar</a>, et al.</p>
-                            <p class="pub-venue">In <em>CVPR Precognition Workshop</em>, 2026</p>
-                            <div class="pub-links">
-                                <a href="https://drive.google.com/file/d/16-VEaFd6-cdcnAlNv3yhL2kqaS5mi3l1/view?usp=drive_link"
-                                    target="_blank" class="pub-link">
-                                    Paper
-                                </a>
-                                <a href="https://www.youtube.com/watch?v=0QDESYbUcLw" target="_blank" class="pub-link">
-                                    Video
-                                </a>
-                                <a href="https://drive.google.com/file/d/156DK4H5Ht06kgXR8-hEgV4QPAvxpBSk1/view?usp=sharing"
-                                    target="_blank" class="pub-link">
-                                    Poster
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="publication-item">
-                        <div class="publication-figure">
-                            <img src="https://img.youtube.com/vi/3p01hXMULtc/maxresdefault.jpg"
-                                alt="Multi-robot teleoperation publication preview">
-                            <span>Under Review</span>
-                        </div>
-                        <div class="pub-content">
-                            <h4>Robots That Know When to Ask: VLM-Driven Reasoning for Human-on-Demand Multi-Robot
-                                Teleoperation</h4>
-                            <p class="pub-authors"><a href="#home">Vivek Kumar</a>, et al.</p>
-                            <p class="pub-venue">Under review</p>
-                            <div class="pub-links">
-                                <a href="https://youtu.be/3p01hXMULtc?si=Co7V5-fZ44uZ2lex" target="_blank"
-                                    class="pub-link">
-                                    Video
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="publication-item">
-                        <div class="publication-figure">
-                            <img src="https://drive.google.com/thumbnail?id=1eFlrzRyeTO1ZhGdFbciHG2mn4tbbi024&sz=w1000"
-                                alt="Zero-shot blind inpainting publication preview">
-                            <span>ICLR'27</span>
-                        </div>
-                        <div class="pub-content">
-                            <h4>Zero-Shot Blind Inpainting with Pretrained Diffusion Priors</h4>
-                            <p class="pub-authors">Wenjie Zhang, <a href="#home">Vivek Kumar</a>, et al.</p>
-                            <p class="pub-venue"><em>ICLR 2027</em>, under review</p>
-                            <div class="pub-links">
-                                <a href="https://drive.google.com/file/d/1eFlrzRyeTO1ZhGdFbciHG2mn4tbbi024/view?usp=sharing"
-                                    target="_blank" class="pub-link">
-                                    Poster
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <h2 class="section-title projects-heading">Projects</h2>
-            <div class="projects-grid">
-                <!-- Priority Projects -->
-                <div class="project-card featured vla-card">
+                <article class="project-featured">
                     <a href="https://www.youtube.com/watch?v=S_vMShugkvg&amp;list=PLxjsFn0S9vDqfPH7jgvbqeu5v_envfnhZ&amp;index=18"
-                        target="_blank" class="project-thumbnail">
-                        <img src="sign-vla-preview.jpg" alt="Sign-guided VLA demo preview">
-                        <div class="play-overlay">
-                            <i class="fab fa-youtube"></i>
-                            <span>Watch Demo</span>
-                        </div>
+                        target="_blank" rel="noopener" class="project-media"
+                        aria-label="Watch the sign-guided VLA demo on YouTube">
+                        <img src="sign-vla-preview.jpg" alt="Sign-guided VLA navigation demo" loading="lazy">
+                        <span class="media-badge"><i class="fas fa-play"></i> Demo</span>
                     </a>
-                    <div class="project-header">
-                        <p class="project-kicker">Research · NextGX Lab</p>
-                        <h3 class="project-title">Long-Horizon Sign-Guided VLA for Mapless Navigation</h3>
-                        <p class="project-description">Contributed to a sign-guided Vision-Language-Action framework for
-                            long-horizon mapless navigation, using semantic scene understanding and language reasoning
-                            to move toward user-specified destinations without relying on a fixed map.</p>
-                    </div>
-                    <div class="project-footer">
-                        <div class="project-language">
-                            <span class="language-dot" style="background-color: #3572A5"></span>
-                            <span>VLA, VLM Reasoning, ROS 2</span>
-                        </div>
+                    <div class="project-body">
+                        <p class="project-meta">Research · NextGX Lab</p>
+                        <h3>Long-Horizon Sign-Guided VLA for Mapless Navigation</h3>
+                        <p>Contributed to a sign-guided Vision-Language-Action framework for long-horizon mapless
+                            navigation, using semantic scene understanding and language reasoning to reach
+                            user-specified destinations without relying on a fixed map.</p>
+                        <ul class="tags">
+                            <li>VLA</li>
+                            <li>VLM reasoning</li>
+                            <li>ROS 2</li>
+                            <li>Mapless navigation</li>
+                        </ul>
                         <div class="project-links">
                             <a href="https://www.youtube.com/watch?v=S_vMShugkvg&amp;list=PLxjsFn0S9vDqfPH7jgvbqeu5v_envfnhZ&amp;index=18"
-                                target="_blank" aria-label="Video"><i class="fab fa-youtube"></i></a>
-                            <a href="https://github.com/vivek-049" target="_blank" aria-label="GitHub"><i
-                                    class="fab fa-github"></i></a>
+                                target="_blank" rel="noopener"><i class="fab fa-youtube"></i> Watch demo</a>
+                        </div>
+                    </div>
+                </article>
+
+                <div class="project-grid">
+                    <article class="project-card">
+                        <a href="https://youtube.com/shorts/cq_2KAHCOBs?feature=share" target="_blank" rel="noopener"
+                            class="project-media" aria-label="Watch the ACT manipulation demo on YouTube">
+                            <img src="https://img.youtube.com/vi/cq_2KAHCOBs/hqdefault.jpg"
+                                alt="Robot arm manipulation demo in ManiSkill" loading="lazy">
+                            <span class="media-badge"><i class="fas fa-play"></i> Demo</span>
+                        </a>
+                        <div class="project-body">
+                            <h3>Robot Manipulation with Action Chunking Transformers</h3>
+                            <p>End-to-end imitation learning pipeline that trains an ACT policy on RGB-D observations,
+                                reaching <strong>95%+ success</strong> on ManiSkill PickCube in 30K iterations, with
+                                trajectory replay and video-based evaluation.</p>
+                            <ul class="tags">
+                                <li>Imitation learning</li>
+                                <li>ACT</li>
+                                <li>ManiSkill</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://youtube.com/shorts/cq_2KAHCOBs?feature=share" target="_blank"
+                                    rel="noopener"><i class="fab fa-youtube"></i> Demo</a>
+                                <a href="https://github.com/Vivek-049/Arm-manipulation-in-Maniskill" target="_blank"
+                                    rel="noopener"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <a href="https://youtu.be/Lrna9ki87Lo?si=AtG-hbrgz57GsLGN" target="_blank" rel="noopener"
+                            class="project-media" aria-label="Watch the diffusion driving policy demo on YouTube">
+                            <img src="https://img.youtube.com/vi/Lrna9ki87Lo/maxresdefault.jpg"
+                                alt="Diffusion driving policy demo" loading="lazy">
+                            <span class="media-badge"><i class="fas fa-play"></i> Demo</span>
+                        </a>
+                        <div class="project-body">
+                            <h3>Multimodal Diffusion Policy for Autonomous Driving</h3>
+                            <p>Lightweight VLA diffusion policy with a CNN-Transformer that predicts trajectories from
+                                natural-language instructions; 5-step action chunking improves multimodal prediction
+                                and mitigates mode collapse.</p>
+                            <ul class="tags">
+                                <li>Diffusion policy</li>
+                                <li>VLA</li>
+                                <li>PyTorch</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://youtu.be/Lrna9ki87Lo?si=AtG-hbrgz57GsLGN" target="_blank"
+                                    rel="noopener"><i class="fab fa-youtube"></i> Demo</a>
+                                <a href="https://github.com/Vivek-049/Lightweight-diffusion-policy-for-Autonomous-Driving"
+                                    target="_blank" rel="noopener"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <a href="https://www.youtube.com/watch?v=EroahD0DSmA&amp;list=PLxjsFn0S9vDqfPH7jgvbqeu5v_envfnhZ&amp;index=19"
+                            target="_blank" rel="noopener" class="project-media"
+                            aria-label="Watch the RL alert system demo on YouTube">
+                            <img src="Screenshot from 2026-07-16 19-31-38.png"
+                                alt="RL alert system intersection simulation" loading="lazy">
+                            <span class="media-badge"><i class="fas fa-play"></i> Demo</span>
+                        </a>
+                        <div class="project-body">
+                            <h3>RL-Based Alert System for Intersection Safety</h3>
+                            <p>PPO alert policy for an MnDOT-funded project that fuses vehicle-to-vehicle interaction
+                                data to flag high-risk traffic conflicts in real time at signal-free rural
+                                intersections.</p>
+                            <ul class="tags">
+                                <li>PPO</li>
+                                <li>Reinforcement learning</li>
+                                <li>Safety</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://www.youtube.com/watch?v=EroahD0DSmA&amp;list=PLxjsFn0S9vDqfPH7jgvbqeu5v_envfnhZ&amp;index=19"
+                                    target="_blank" rel="noopener"><i class="fab fa-youtube"></i> Demo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <a href="https://youtu.be/I4BESdr4LIU?si=nvdnl_X5rpBPW8rD" target="_blank" rel="noopener"
+                            class="project-media" aria-label="Watch the video prediction demo on YouTube">
+                            <img src="https://img.youtube.com/vi/I4BESdr4LIU/maxresdefault.jpg"
+                                alt="Video prediction for teleoperation demo" loading="lazy">
+                            <span class="media-badge"><i class="fas fa-play"></i> Demo</span>
+                        </a>
+                        <div class="project-body">
+                            <h3>Real-Time Video Prediction for Low-Latency Teleoperation</h3>
+                            <p>Encoder-decoder video prediction model trained on BDD100K that predicts future frames to
+                                compensate for <strong>100+ ms</strong> of network latency in remote driving.</p>
+                            <ul class="tags">
+                                <li>Video prediction</li>
+                                <li>Teleoperation</li>
+                                <li>PyTorch</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://youtu.be/I4BESdr4LIU?si=nvdnl_X5rpBPW8rD" target="_blank"
+                                    rel="noopener"><i class="fab fa-youtube"></i> Demo</a>
+                                <a href="https://github.com/Vivek-049/Real-time-video-prediction-for-teleoperation-Autonomous-Driving-"
+                                    target="_blank" rel="noopener"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <a href="https://youtu.be/Mnq75lZky70?si=WWvYBHal7oJjxnr0" target="_blank" rel="noopener"
+                            class="project-media" aria-label="Watch the autonomous navigation demo on YouTube">
+                            <img src="https://img.youtube.com/vi/Mnq75lZky70/maxresdefault.jpg"
+                                alt="Autonomous navigation on the AgileX Hunter 2.0" loading="lazy">
+                            <span class="media-badge"><i class="fas fa-play"></i> Demo</span>
+                        </a>
+                        <div class="project-body">
+                            <h3>Full-Stack Autonomous Navigation for AgileX Hunter 2.0</h3>
+                            <p>Modular ROS 2 autonomy stack with NDT-OMP LiDAR localization, D*+ planning, and OBB-voxel
+                                collision checking against an OctoMap with automatic replanning, configured in YAML for
+                                rapid deployment.</p>
+                            <ul class="tags">
+                                <li>ROS 2</li>
+                                <li>C++</li>
+                                <li>LiDAR</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://youtu.be/Mnq75lZky70?si=WWvYBHal7oJjxnr0" target="_blank"
+                                    rel="noopener"><i class="fab fa-youtube"></i> Demo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <a href="https://youtu.be/xTY15INFTRo?si=3LiHVndpfPrqNH9V" target="_blank" rel="noopener"
+                            class="project-media" aria-label="Watch the ADAS demo on YouTube">
+                            <img src="https://img.youtube.com/vi/xTY15INFTRo/maxresdefault.jpg"
+                                alt="Advanced driver assistance system demo" loading="lazy">
+                            <span class="media-badge"><i class="fas fa-play"></i> Demo</span>
+                        </a>
+                        <div class="project-body">
+                            <h3>Advanced Driver Assistance System (ADAS)</h3>
+                            <p>Forward-collision, lane-departure and lane-keeping assist using YOLOv8m detection,
+                                ByteTrack tracking and UFLD-v2 lane detection, running in real time with TensorRT / ONNX
+                                acceleration.</p>
+                            <ul class="tags">
+                                <li>YOLOv8</li>
+                                <li>TensorRT</li>
+                                <li>ROS 2</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://youtu.be/xTY15INFTRo?si=3LiHVndpfPrqNH9V" target="_blank"
+                                    rel="noopener"><i class="fab fa-youtube"></i> Demo</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="more-projects">
+                    <h3 class="subhead">More projects</h3>
+                    <ul class="more-list">
+                        <li>
+                            <div>
+                                <h4>Bird's-Eye-View Perception with Inverse Perspective Mapping</h4>
+                                <p>Real-time ROS 2 pipeline giving teleoperators a surround view with reduced
+                                    perspective distortion.</p>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://youtu.be/_VVxH5udUdM?si=Cwi0ldcJqMd1Yqu-" target="_blank"
+                                    rel="noopener"><i class="fab fa-youtube"></i> Demo</a>
+                                <a href="https://github.com/Vivek-049/Real-time-Bird--Eye-View-BEV-using-ros2"
+                                    target="_blank" rel="noopener"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h4>On-Demand Mobile EV Charging Robot (WeZZOn)</h4>
+                                <p>Autonomous EV charging-as-a-service platform, validated in real-world parking-lot
+                                    tests on a battery-integrated AgileX Hunter.</p>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://youtu.be/Kl7fvVgXIyI?si=ZXdKzi30ttFTriQm" target="_blank"
+                                    rel="noopener"><i class="fab fa-youtube"></i> Demo</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications -->
+        <section id="publications" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Publications</h2>
+                <div class="pub-list">
+                    <article class="pub">
+                        <a href="https://www.youtube.com/watch?v=0QDESYbUcLw" target="_blank" rel="noopener"
+                            class="pub-thumb" aria-label="Watch the paper video">
+                            <img src="https://img.youtube.com/vi/0QDESYbUcLw/maxresdefault.jpg"
+                                alt="Teleoperation escalation paper preview" loading="lazy">
+                        </a>
+                        <div>
+                            <span class="venue published">CVPR 2026 Workshop</span>
+                            <h3>VLM-Driven Proactive Escalation for Tele-operations in Autonomous Vehicles</h3>
+                            <p class="pub-authors"><strong>Vivek Kumar</strong>, et al.</p>
+                            <p class="pub-venue">CVPR Precognition Workshop, 2026</p>
+                            <div class="project-links">
+                                <a href="https://drive.google.com/file/d/16-VEaFd6-cdcnAlNv3yhL2kqaS5mi3l1/view?usp=drive_link"
+                                    target="_blank" rel="noopener"><i class="fas fa-file-lines"></i> Paper</a>
+                                <a href="https://www.youtube.com/watch?v=0QDESYbUcLw" target="_blank" rel="noopener"><i
+                                        class="fab fa-youtube"></i> Video</a>
+                                <a href="https://drive.google.com/file/d/156DK4H5Ht06kgXR8-hEgV4QPAvxpBSk1/view?usp=sharing"
+                                    target="_blank" rel="noopener"><i class="fas fa-image"></i> Poster</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="pub">
+                        <div class="pub-thumb pub-thumb-placeholder" aria-hidden="true">
+                            <i class="fas fa-wand-magic-sparkles"></i>
+                            <span>ZS-PDP</span>
+                        </div>
+                        <div>
+                            <span class="venue">ICLR 2027 · Under review</span>
+                            <h3>Zero-Shot Blind Inpainting with Pretrained Diffusion Priors</h3>
+                            <p class="pub-authors">Wenjie Zhang, <strong>Vivek Kumar</strong>, et al.</p>
+                            <p class="pub-venue">ICLR 2027, under review</p>
+                            <!-- Poster link hidden until the Drive file is shared publicly:
+                                 https://drive.google.com/file/d/1eFlrzRyeTO1ZhGdFbciHG2mn4tbbi024/view?usp=sharing -->
+                        </div>
+                    </article>
+
+                    <article class="pub">
+                        <a href="https://youtu.be/3p01hXMULtc?si=Co7V5-fZ44uZ2lex" target="_blank" rel="noopener"
+                            class="pub-thumb" aria-label="Watch the paper video">
+                            <img src="https://img.youtube.com/vi/3p01hXMULtc/maxresdefault.jpg"
+                                alt="Multi-robot teleoperation paper preview" loading="lazy">
+                        </a>
+                        <div>
+                            <span class="venue">Under review</span>
+                            <h3>Robots That Know When to Ask: VLM-Driven Reasoning for Human-on-Demand Multi-Robot
+                                Teleoperation</h3>
+                            <p class="pub-authors"><strong>Vivek Kumar</strong>, et al.</p>
+                            <p class="pub-venue">Under review</p>
+                            <div class="project-links">
+                                <a href="https://youtu.be/3p01hXMULtc?si=Co7V5-fZ44uZ2lex" target="_blank"
+                                    rel="noopener"><i class="fab fa-youtube"></i> Video</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills & Education -->
+        <section id="skills" class="section">
+            <div class="container split">
+                <div>
+                    <h2 class="section-title">Skills</h2>
+                    <div class="skill-groups">
+                        <div class="skill-group">
+                            <h3>Robot learning</h3>
+                            <ul class="tags">
+                                <li>Imitation learning</li>
+                                <li>VLA policies</li>
+                                <li>ACT</li>
+                                <li>Diffusion policies</li>
+                                <li>Reinforcement learning</li>
+                                <li>Teleoperation</li>
+                            </ul>
+                        </div>
+                        <div class="skill-group">
+                            <h3>Generative &amp; foundation models</h3>
+                            <ul class="tags">
+                                <li>Vision-language models</li>
+                                <li>World models</li>
+                                <li>Diffusion / flow matching</li>
+                                <li>LoRA</li>
+                                <li>DPO</li>
+                            </ul>
+                        </div>
+                        <div class="skill-group">
+                            <h3>Programming &amp; ML</h3>
+                            <ul class="tags">
+                                <li>Python</li>
+                                <li>C++</li>
+                                <li>PyTorch</li>
+                                <li>Hugging Face</li>
+                                <li>OpenCV</li>
+                                <li>TensorRT</li>
+                                <li>ONNX</li>
+                                <li>Docker</li>
+                            </ul>
+                        </div>
+                        <div class="skill-group">
+                            <h3>Robotics &amp; simulation</h3>
+                            <ul class="tags">
+                                <li>ROS 2</li>
+                                <li>MuJoCo</li>
+                                <li>Isaac Sim</li>
+                                <li>ManiSkill</li>
+                                <li>Linux</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
 
-                <div class="project-card featured">
-                    <a href="https://www.youtube.com/watch?v=EroahD0DSmA&amp;list=PLxjsFn0S9vDqfPH7jgvbqeu5v_envfnhZ&amp;index=19"
-                        target="_blank" class="project-thumbnail">
-                        <img src="Screenshot from 2026-07-16 19-31-38.png" alt="RL alert system intersection simulation preview">
-                        <div class="play-overlay">
-                            <i class="fab fa-youtube"></i>
-                            <span>Watch Demo</span>
-                        </div>
-                    </a>
-                    <div class="project-header">
-                        <p class="project-kicker">Reinforcement learning</p>
-                        <h3 class="project-title">RL-Based Alert System for Intersection Safety</h3>
-                        <p class="project-description">Designed a PPO-based alert policy for an MnDOT-funded
-                            intersection-safety project, fusing vehicle-to-vehicle interaction data to identify and flag
-                            high-risk traffic conflicts in real time at signal-free rural intersections.</p>
-                    </div>
-                    <div class="project-footer">
-                        <div class="project-language">
-                            <span class="language-dot" style="background-color: #7fd66b"></span>
-                            <span>PPO, Reinforcement Learning, Safety</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://www.youtube.com/watch?v=EroahD0DSmA&amp;list=PLxjsFn0S9vDqfPH7jgvbqeu5v_envfnhZ&amp;index=19"
-                                target="_blank" aria-label="Video"><i class="fab fa-youtube"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card featured">
-                    <a href="https://youtu.be/Mnq75lZky70?si=WWvYBHal7oJjxnr0" target="_blank"
-                        class="project-thumbnail">
-                        <img src="https://img.youtube.com/vi/Mnq75lZky70/maxresdefault.jpg"
-                            alt="Autonomous Navigation Demo">
-                        <div class="play-overlay">
-                            <i class="fab fa-youtube"></i>
-                            <span>Watch Demo</span>
-                        </div>
-                    </a>
-                    <div class="project-header">
-                        <h3 class="project-title">Full-Stack Autonomous Navigation System for AgileX Hunter 2.0</h3>
-                        <p class="project-description">Developed a production-ready modular ROS 2 autonomy stack
-                            integrating NDT-OMP LiDAR localization, D*+ path planning, and collision avoidance for
-                            autonomous indoor navigation using RobotSense LiDAR in pre-mapped environments. Built
-                            collision avoidance pipeline using OBB-voxel intersection tests against octomap with
-                            automatic replanning capabilities and YAML-based configuration for rapid deployment.</p>
-                    </div>
-                    <div class="project-footer">
-                        <div class="project-language">
-                            <span class="language-dot" style="background-color: #f34b7d"></span>
-                            <span>ROS 2, C++, Python</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/vivek-049" target="_blank" aria-label="GitHub"><i
-                                    class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <a href="https://youtu.be/Lrna9ki87Lo?si=AtG-hbrgz57GsLGN" target="_blank"
-                        class="project-thumbnail">
-                        <img src="https://img.youtube.com/vi/Lrna9ki87Lo/maxresdefault.jpg"
-                            alt="Diffusion Driving Policy Demo">
-                        <div class="play-overlay">
-                            <i class="fab fa-youtube"></i>
-                            <span>Watch Demo</span>
-                        </div>
-                    </a>
-                    <div class="project-header">
-                        <h3 class="project-title">Multi-Modal Diffusion based Driving Policy</h3>
-                        <p class="project-description">Developed a lightweight Vision-Language-Action (VLA) diffusion
-                            policy utilizing a custom CNN-Transformer architecture to predict autonomous trajectories
-                            from natural language instructions. Implemented 5-step Action Chunking to improve multimodal
-                            trajectory prediction and mitigate mode collapse.</p>
-                    </div>
-                    <div class="project-footer">
-                        <div class="project-language">
-                            <span class="language-dot" style="background-color: #3572A5"></span>
-                            <span>Python, PyTorch</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/Vivek-049/Lightweight-diffusion-policy-for-Autonomous-Driving" target="_blank" aria-label="GitHub Code"><i
-                                    class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <a href="https://youtube.com/shorts/cq_2KAHCOBs?feature=share" target="_blank"
-                        class="project-thumbnail">
-                        <img src="https://img.youtube.com/vi/cq_2KAHCOBs/hqdefault.jpg" alt="Robot Manipulation Demo">
-                        <div class="play-overlay">
-                            <i class="fab fa-youtube"></i>
-                            <span>Watch Demo</span>
-                        </div>
-                    </a>
-                    <div class="project-header">
-                        <h3 class="project-title">Robot Manipulation via Action Chunking Transformers in ManiSkill</h3>
-                        <p class="project-description">Built an end-to-end imitation learning pipeline using Action
-                            Chunking Transformer (ACT) architecture to train robot arm manipulation policy on RGBD
-                            observations, achieving 95%+ success rate on PickCube task with 30K training iterations.
-                            Trained on HuggingFace PickCube-v1 dataset, implementing trajectory replay and video-based
-                            evaluation pipeline.</p>
-                    </div>
-                    <div class="project-footer">
-                        <div class="project-language">
-                            <span class="language-dot" style="background-color: #3572A5"></span>
-                            <span>Python, PyTorch, ManiSkill</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/Vivek-049/Arm-manipulation-in-Maniskill" target="_blank" aria-label="GitHub Code"><i
-                                    class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card featured">
-                    <a href="https://youtu.be/xTY15INFTRo?si=3LiHVndpfPrqNH9V" target="_blank"
-                        class="project-thumbnail">
-                        <img src="https://img.youtube.com/vi/xTY15INFTRo/maxresdefault.jpg" alt="ADAS System Demo">
-                        <div class="play-overlay">
-                            <i class="fab fa-youtube"></i>
-                            <span>Watch Demo</span>
-                        </div>
-                    </a>
-                    <div class="project-header">
-                        <h3 class="project-title">Advanced Driver Assistance System (ADAS)</h3>
-                        <p class="project-description">Developed an ADAS suite (FCWS, LDWS, LKAS) using YOLOv8m for
-                            detection, ByteTrack for trajectory tracking, and UFLD-v2 (ResNet-18) for lane detection,
-                            achieving real-time inference via TensorRT/ONNX acceleration.</p>
-                    </div>
-                    <div class="project-footer">
-                        <div class="project-language">
-                            <span class="language-dot" style="background-color: #f34b7d"></span>
-                            <span>ROS 2, YOLOv8, TensorRT</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="Advanced Driver Assistance ADAS.pdf" target="_blank" aria-label="Presentation"><i
-                                    class="fas fa-file-pdf"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card featured">
-                    <a href="https://youtu.be/I4BESdr4LIU?si=nvdnl_X5rpBPW8rD" target="_blank"
-                        class="project-thumbnail">
-                        <img src="https://img.youtube.com/vi/I4BESdr4LIU/maxresdefault.jpg" alt="Video Prediction Demo">
-                        <div class="play-overlay">
-                            <i class="fab fa-youtube"></i>
-                            <span>Watch Demo</span>
-                        </div>
-                    </a>
-                    <div class="project-header">
-                        <h3 class="project-title">Video Prediction Framework for Latency Compensation</h3>
-                        <p class="project-description">Developed a video prediction framework by training an
-                            encoder-decoder architecture on BDD100K dataset to compensate for 100ms+ network latency in
-                            teleoperation, utilizing future-frame prediction to maintain real-time visual feedback
-                            during remote driving.</p>
-                    </div>
-                    <div class="project-footer">
-                        <div class="project-language">
-                            <span class="language-dot" style="background-color: #3572A5"></span>
-                            <span>PyTorch, Deep Learning</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/Vivek-049/Real-time-video-prediction-for-teleoperation-Autonomous-Driving-"
-                                target="_blank" aria-label="GitHub Code" class="code-link"><i class="fab fa-github"></i><span>Code</span></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <a href="https://youtu.be/Kl7fvVgXIyI?si=ZXdKzi30ttFTriQm" target="_blank"
-                        class="project-thumbnail">
-                        <img src="https://img.youtube.com/vi/Kl7fvVgXIyI/maxresdefault.jpg"
-                            alt="EV Charging Robot Demo">
-                        <div class="play-overlay">
-                            <i class="fab fa-youtube"></i>
-                            <span>Watch Demo</span>
-                        </div>
-                    </a>
-                    <div class="project-header">
-                        <h3 class="project-title">On-Demand Mobile EV Charging Robot (WeZZOn)</h3>
-                        <p class="project-description">Worked on an autonomous EV charging-as-a-service platform to
-                            mitigate fixed infrastructure barriers and validated it through real-world parking lot
-                            testing using a battery-integrated AgileX Hunter platform.</p>
-                    </div>
-                    <div class="project-footer">
-                        <div class="project-language">
-                            <span class="language-dot" style="background-color: #f34b7d"></span>
-                            <span>ROS 2, LiDAR, AgileX</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/vivek-049" target="_blank" aria-label="GitHub"><i
-                                    class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card featured">
-                    <a href="https://youtu.be/_VVxH5udUdM?si=Cwi0ldcJqMd1Yqu-" target="_blank"
-                        class="project-thumbnail">
-                        <img src="https://img.youtube.com/vi/_VVxH5udUdM/maxresdefault.jpg" alt="BEV Perception Demo">
-                        <div class="play-overlay">
-                            <i class="fab fa-youtube"></i>
-                            <span>Watch Demo</span>
-                        </div>
-                    </a>
-                    <div class="project-header">
-                        <h3 class="project-title">Bird's-Eye-View (BEV) Perception Pipeline</h3>
-                        <p class="project-description">Implemented a real-time Bird's-Eye-View (BEV) perception pipeline
-                            using ROS 2, utilizing Inverse Perspective Mapping (IPM) to provide teleoperators with a
-                            seamless surround-view, significantly reducing perspective distortion.</p>
-                    </div>
-                    <div class="project-footer">
-                        <div class="project-language">
-                            <span class="language-dot" style="background-color: #3572A5"></span>
-                            <span>ROS 2, IPM, Computer Vision</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/Vivek-049/Real-time-Bird--Eye-View-BEV-using-ros2"
-                                target="_blank" aria-label="GitHub Code" class="code-link"><i class="fab fa-github"></i><span>Code</span></a>
-                        </div>
+                <div>
+                    <h2 class="section-title">Education</h2>
+                    <div class="edu-list">
+                        <article class="edu">
+                            <h3>University of Minnesota, Twin Cities</h3>
+                            <p>M.S. in Robotics</p>
+                            <p class="edu-meta">Sep 2024 – Present · Minneapolis, MN</p>
+                        </article>
+                        <article class="edu">
+                            <h3>National Institute of Technology Rourkela</h3>
+                            <p>B.Tech. in Mechanical Engineering</p>
+                            <p class="edu-meta">2019 – 2023 · Odisha, India</p>
+                        </article>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <p class="contact-text">I'm always open to new opportunities, collaborations, or just a chat about
-                    robotics and technology. Feel free to reach out!</p>
-                <div class="contact-methods">
-                    <a href="mailto:Kuma0355@umn.edu" class="contact-card">
-                        <i class="fas fa-envelope"></i>
-                        <h3>Email</h3>
-                        <p>Kuma0355@umn.edu</p>
-                    </a>
-                    <a href="https://github.com/vivek-049" target="_blank" class="contact-card">
-                        <i class="fab fa-github"></i>
-                        <h3>GitHub</h3>
-                        <p>@vivek-049</p>
-                    </a>
-                    <a href="https://www.linkedin.com/in/vivek-kumar-robotics/" target="_blank" class="contact-card">
-                        <i class="fab fa-linkedin"></i>
-                        <h3>LinkedIn</h3>
-                        <p>Connect with me</p>
-                    </a>
+        <!-- Contact -->
+        <section id="contact" class="section contact">
+            <div class="container">
+                <div class="contact-panel">
+                    <h2>Let's talk robot learning.</h2>
+                    <p>I'm always open to new opportunities and conversations about robot learning, VLAs and
+                        real-world deployment. Email is the fastest way to reach me.</p>
+                    <div class="cta-row">
+                        <a href="mailto:Kuma0355@umn.edu" class="btn btn-primary"><i class="fas fa-envelope"></i>
+                            Kuma0355@umn.edu</a>
+                        <a href="Vivek_Kumar_Resume.pdf" target="_blank" rel="noopener" class="btn btn-secondary"><i
+                                class="fas fa-file-lines"></i> Resume</a>
+                        <a href="https://www.linkedin.com/in/vivek-kumar-robotics/" target="_blank" rel="noopener"
+                            class="btn btn-secondary"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                        <a href="https://github.com/vivek-049" target="_blank" rel="noopener"
+                            class="btn btn-secondary"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Vivek Kumar. MS Robotics @ UMN</p>
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; 2026 Vivek Kumar · Updated November 2026</p>
             <div class="footer-links">
-                <a href="https://github.com/vivek-049" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/vivek-kumar-robotics/" target="_blank"><i
-                        class="fab fa-linkedin"></i></a>
-                <a href="mailto:Kuma0355@umn.edu"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/vivek-049" target="_blank" rel="noopener" aria-label="GitHub"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/vivek-kumar-robotics/" target="_blank" rel="noopener"
+                    aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:Kuma0355@umn.edu" aria-label="Email"><i class="fas fa-envelope"></i></a>
             </div>
         </div>
     </footer>
