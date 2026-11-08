@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Vivek's Portfolio - Robotics Engineer & Developer">
+    <meta name="description" content="Vivek Kumar - Robot Learning Intern at Factory Intelligence, MS Robotics at the University of Minnesota">
     <title>Vivek - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -17,6 +17,7 @@
             <div class="nav-brand">Vivek</div>
             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
@@ -35,7 +36,7 @@
                 <div class="intro-text">
                     <p class="intro-kicker">Robotics research portfolio</p>
                     <h1 class="intro-name">Vivek Kumar</h1>
-                    <p class="intro-role">MS Robotics @ University of Minnesota, Twin Cities. I build VLA/VLM autonomy systems, ROS 2 navigation stacks, and robotics perception pipelines.</p>
+                    <p class="intro-role">Robot Learning Intern @ Factory Intelligence and MS Robotics @ University of Minnesota, Twin Cities. I train and deploy robot foundation models, VLA policies, and RL for real-world manipulation.</p>
                     <div class="intro-links">
                         <a href="mailto:Kuma0355@umn.edu"><i class="fas fa-envelope"></i> Email</a>
                         <a href="https://github.com/vivek-049" target="_blank"><i class="fab fa-github"></i> GitHub</a>
@@ -44,7 +45,7 @@
                         <a href="Vivek_Kumar_Resume.pdf" target="_blank" class="resume-link"><i class="fas fa-file-pdf"></i>
                             Resume</a>
                     </div>
-                    <p class="hero-focus">CVPR 2026 Workshop · Long-horizon sign-guided VLA · AgileX Hunter 2.0</p>
+                    <p class="hero-focus">π0.5 / VLA policies on YAM arms · CVPR 2026 Workshop · Sign-guided VLA navigation</p>
                 </div>
                 <aside class="hero-visual" aria-label="Vivek with an AgileX robotics platform">
                     <img src="IMG-20260513-WA0045~2.jpg" alt="Vivek Kumar with an AgileX robotics platform">
@@ -53,6 +54,92 @@
                         <strong>AgileX robotics platform</strong>
                     </div>
                 </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title experience-heading">Experience</h2>
+            <div class="experience-list">
+                <article class="experience-item current">
+                    <div class="experience-meta">
+                        <span class="experience-date">Aug 2026 – Present</span>
+                        <span class="experience-location">Lafayette, IN</span>
+                    </div>
+                    <div class="experience-body">
+                        <h3>Robot Learning Intern <span>· Factory Intelligence</span></h3>
+                        <p class="experience-focus">Robot Foundation Models, VLAs, RL, Real-world Deployment</p>
+                        <ul>
+                            <li>Deployed a robotic assembly workcell with two YAM arms for an electrical fabrication
+                                client, chaining task-specific robot policies via a learned completion flag, with high
+                                success rates and multi-hour production runs.</li>
+                            <li>Mid-training π0.5 on 100+ h of multi-task YAM data to improve downstream fine-tuning,
+                                applying human-in-the-loop RL for precise, contact-rich tasks such as screwing and wire
+                                hooking.</li>
+                            <li>Fine-tuning π-family policies with a joint-torque history token, along with other robot
+                                policies, on 800+ episodes for contact-rich tasks on YAM arms and the Almond Axol, a
+                                wheeled semi-humanoid.</li>
+                            <li>Contributed to FI-OS, the company's in-house robot-learning platform and UI that runs the
+                                full pipeline: onboarding new robots, teleoperation, data collection, training, evals and
+                                deployment.</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="experience-item">
+                    <div class="experience-meta">
+                        <span class="experience-date">June 2025 – July 2026</span>
+                        <span class="experience-location">Minneapolis, MN</span>
+                    </div>
+                    <div class="experience-body">
+                        <h3>Graduate Research Assistant <span>· NextGX Lab, University of Minnesota</span></h3>
+                        <p class="experience-focus">Autonomous Driving, VLA, VLMs</p>
+                        <ul>
+                            <li>Built a VLM for proactive escalation in autonomous driving using Qwen3-VL with NVIDIA
+                                Cosmos as the teacher model, fine-tuned on nuScenes via LoRA and DPO, achieving 92.1%
+                                accuracy.</li>
+                            <li>Contributed to a sign-guided Vision-Language-Action framework for long-horizon mapless
+                                navigation that uses semantic scene understanding and language reasoning to reach
+                                user-specified destinations.</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="experience-item">
+                    <div class="experience-meta">
+                        <span class="experience-date">Apr 2025 – July 2026</span>
+                        <span class="experience-location">Minneapolis, MN</span>
+                    </div>
+                    <div class="experience-body">
+                        <h3>Graduate Researcher <span>· GLOVEX Lab, University of Minnesota</span></h3>
+                        <p class="experience-focus">Inverse Problems, Diffusion and Flow-matching Models</p>
+                        <ul>
+                            <li>Researched inverse problems using generative priors such as diffusion and flow-matching
+                                models.</li>
+                            <li>Built ZS-PDP, a zero-shot blind inpainting framework that outperforms both SOTA
+                                supervised and zero-shot methods.</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-group">
+                    <h4>Robot Learning</h4>
+                    <p>Imitation Learning, VLA Policies, ACT, Diffusion Policies, Reinforcement Learning, Teleoperation</p>
+                </div>
+                <div class="skill-group">
+                    <h4>Generative &amp; Foundation Models</h4>
+                    <p>Vision-Language Models, World Models, Diffusion / Flow Matching, LoRA, DPO</p>
+                </div>
+                <div class="skill-group">
+                    <h4>Programming &amp; ML</h4>
+                    <p>Python, C++, PyTorch, Hugging Face, OpenCV, TensorRT, ONNX, Docker</p>
+                </div>
+                <div class="skill-group">
+                    <h4>Robotics &amp; Simulation</h4>
+                    <p>ROS 2, MuJoCo, Isaac Sim, ManiSkill, Linux</p>
+                </div>
             </div>
         </div>
     </section>
@@ -113,12 +200,12 @@
                         <div class="publication-figure">
                             <img src="https://drive.google.com/thumbnail?id=1eFlrzRyeTO1ZhGdFbciHG2mn4tbbi024&sz=w1000"
                                 alt="Zero-shot blind inpainting publication preview">
-                            <span>NeurIPS'26</span>
+                            <span>ICLR'27</span>
                         </div>
                         <div class="pub-content">
                             <h4>Zero-Shot Blind Inpainting with Pretrained Diffusion Priors</h4>
                             <p class="pub-authors">Wenjie Zhang, <a href="#home">Vivek Kumar</a>, et al.</p>
-                            <p class="pub-venue"><em>NeurIPS 2026</em>, under review</p>
+                            <p class="pub-venue"><em>ICLR 2027</em>, under review</p>
                             <div class="pub-links">
                                 <a href="https://drive.google.com/file/d/1eFlrzRyeTO1ZhGdFbciHG2mn4tbbi024/view?usp=sharing"
                                     target="_blank" class="pub-link">
@@ -143,9 +230,9 @@
                         </div>
                     </a>
                     <div class="project-header">
-                        <p class="project-kicker">Current research</p>
+                        <p class="project-kicker">Research · NextGX Lab</p>
                         <h3 class="project-title">Long-Horizon Sign-Guided VLA for Mapless Navigation</h3>
-                        <p class="project-description">Developing a sign-guided Vision-Language-Action framework for
+                        <p class="project-description">Contributed to a sign-guided Vision-Language-Action framework for
                             long-horizon mapless navigation, using semantic scene understanding and language reasoning
                             to move toward user-specified destinations without relying on a fixed map.</p>
                     </div>
