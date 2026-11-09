@@ -55,8 +55,8 @@
             <a href="#about" class="brand"><span class="brand-mark">VK</span>Vivek Kumar</a>
             <ul class="nav-links" id="nav-links">
                 <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
                 <li><a href="#publications">Publications</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -78,10 +78,11 @@
             <div class="container hero-grid">
                 <div class="hero-text">
                     <h1 class="hero-name">Vivek Kumar</h1>
-                    <p class="hero-headline"><span class="accent">Robot learning</span> for <span
-                            class="nowrap">real-world</span> manipulation.</p>
-                    <p class="hero-summary">I train and deploy robot foundation models on real hardware, from π0.5 / VLA
-                        fine-tuning and imitation learning to human-in-the-loop RL for precise, contact-rich tasks.</p>
+                    <p class="hero-headline"><span class="accent">Robot learning</span>, from research to <span
+                            class="nowrap">real-world</span> deployment.</p>
+                    <p class="hero-summary">I train and deploy robot foundation models on real hardware, working with VLA
+                        policies like π0.5, imitation learning and RL across robot arms, <span
+                            class="nowrap">semi-humanoids</span> and mobile robots.</p>
                     <ul class="hero-roles">
                         <li><i class="fas fa-briefcase" aria-hidden="true"></i><span>Robot Learning Intern at
                                 <strong>Factory Intelligence</strong></span></li>
@@ -187,7 +188,7 @@
                             <li>VLMs</li>
                             <li>VLA</li>
                             <li>LoRA / DPO</li>
-                            <li>Autonomous driving</li>
+                            <li>Teleoperation</li>
                         </ul>
                     </article>
 
@@ -216,8 +217,72 @@
             </div>
         </section>
 
+        <!-- Publications -->
+        <section id="publications" class="section">
+            <div class="container">
+                <h2 class="section-title">Publications</h2>
+                <div class="pub-list">
+                    <article class="pub">
+                        <a href="https://www.youtube.com/watch?v=0QDESYbUcLw" target="_blank" rel="noopener"
+                            class="pub-thumb" aria-label="Watch the paper video">
+                            <img src="https://img.youtube.com/vi/0QDESYbUcLw/maxresdefault.jpg"
+                                alt="Teleoperation escalation paper preview" loading="lazy">
+                        </a>
+                        <div>
+                            <span class="venue published">CVPR 2026 Workshop</span>
+                            <h3>VLM-Driven Proactive Escalation for Tele-operations in Autonomous Vehicles</h3>
+                            <p class="pub-authors"><strong>Vivek Kumar</strong>, et al.</p>
+                            <p class="pub-venue">CVPR Precognition Workshop, 2026</p>
+                            <div class="project-links">
+                                <a href="https://drive.google.com/file/d/16-VEaFd6-cdcnAlNv3yhL2kqaS5mi3l1/view?usp=drive_link"
+                                    target="_blank" rel="noopener"><i class="fas fa-file-lines"></i> Paper</a>
+                                <a href="https://www.youtube.com/watch?v=0QDESYbUcLw" target="_blank" rel="noopener"><i
+                                        class="fab fa-youtube"></i> Video</a>
+                                <a href="https://drive.google.com/file/d/156DK4H5Ht06kgXR8-hEgV4QPAvxpBSk1/view?usp=sharing"
+                                    target="_blank" rel="noopener"><i class="fas fa-image"></i> Poster</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="pub">
+                        <div class="pub-thumb pub-thumb-placeholder" aria-hidden="true">
+                            <i class="fas fa-wand-magic-sparkles"></i>
+                            <span>ZS-PDP</span>
+                        </div>
+                        <div>
+                            <span class="venue">ICLR 2027 · Under review</span>
+                            <h3>Zero-Shot Blind Inpainting with Pretrained Diffusion Priors</h3>
+                            <p class="pub-authors">Wenjie Zhang, <strong>Vivek Kumar</strong>, et al.</p>
+                            <p class="pub-venue">ICLR 2027, under review</p>
+                            <!-- Poster link hidden until the Drive file is shared publicly:
+                                 https://drive.google.com/file/d/1eFlrzRyeTO1ZhGdFbciHG2mn4tbbi024/view?usp=sharing -->
+                        </div>
+                    </article>
+
+                    <article class="pub">
+                        <a href="https://youtu.be/3p01hXMULtc?si=Co7V5-fZ44uZ2lex" target="_blank" rel="noopener"
+                            class="pub-thumb" aria-label="Watch the paper video">
+                            <img src="https://img.youtube.com/vi/3p01hXMULtc/maxresdefault.jpg"
+                                alt="Multi-robot teleoperation paper preview" loading="lazy">
+                        </a>
+                        <div>
+                            <span class="venue">Under review</span>
+                            <h3>Robots That Know When to Ask: VLM-Driven Reasoning for Human-on-Demand Multi-Robot
+                                Teleoperation</h3>
+                            <p class="pub-authors"><strong>Vivek Kumar</strong>, et al.</p>
+                            <p class="pub-venue">Under review</p>
+                            <div class="project-links">
+                                <a href="https://youtu.be/3p01hXMULtc?si=Co7V5-fZ44uZ2lex" target="_blank"
+                                    rel="noopener"><i class="fab fa-youtube"></i> Video</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
         <!-- Projects -->
-        <section id="projects" class="section">
+        <section id="projects" class="section section-alt">
             <div class="container">
                 <h2 class="section-title">Selected projects</h2>
 
@@ -427,70 +492,6 @@
                             </div>
                         </li>
                     </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Publications -->
-        <section id="publications" class="section section-alt">
-            <div class="container">
-                <h2 class="section-title">Publications</h2>
-                <div class="pub-list">
-                    <article class="pub">
-                        <a href="https://www.youtube.com/watch?v=0QDESYbUcLw" target="_blank" rel="noopener"
-                            class="pub-thumb" aria-label="Watch the paper video">
-                            <img src="https://img.youtube.com/vi/0QDESYbUcLw/maxresdefault.jpg"
-                                alt="Teleoperation escalation paper preview" loading="lazy">
-                        </a>
-                        <div>
-                            <span class="venue published">CVPR 2026 Workshop</span>
-                            <h3>VLM-Driven Proactive Escalation for Tele-operations in Autonomous Vehicles</h3>
-                            <p class="pub-authors"><strong>Vivek Kumar</strong>, et al.</p>
-                            <p class="pub-venue">CVPR Precognition Workshop, 2026</p>
-                            <div class="project-links">
-                                <a href="https://drive.google.com/file/d/16-VEaFd6-cdcnAlNv3yhL2kqaS5mi3l1/view?usp=drive_link"
-                                    target="_blank" rel="noopener"><i class="fas fa-file-lines"></i> Paper</a>
-                                <a href="https://www.youtube.com/watch?v=0QDESYbUcLw" target="_blank" rel="noopener"><i
-                                        class="fab fa-youtube"></i> Video</a>
-                                <a href="https://drive.google.com/file/d/156DK4H5Ht06kgXR8-hEgV4QPAvxpBSk1/view?usp=sharing"
-                                    target="_blank" rel="noopener"><i class="fas fa-image"></i> Poster</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="pub">
-                        <div class="pub-thumb pub-thumb-placeholder" aria-hidden="true">
-                            <i class="fas fa-wand-magic-sparkles"></i>
-                            <span>ZS-PDP</span>
-                        </div>
-                        <div>
-                            <span class="venue">ICLR 2027 · Under review</span>
-                            <h3>Zero-Shot Blind Inpainting with Pretrained Diffusion Priors</h3>
-                            <p class="pub-authors">Wenjie Zhang, <strong>Vivek Kumar</strong>, et al.</p>
-                            <p class="pub-venue">ICLR 2027, under review</p>
-                            <!-- Poster link hidden until the Drive file is shared publicly:
-                                 https://drive.google.com/file/d/1eFlrzRyeTO1ZhGdFbciHG2mn4tbbi024/view?usp=sharing -->
-                        </div>
-                    </article>
-
-                    <article class="pub">
-                        <a href="https://youtu.be/3p01hXMULtc?si=Co7V5-fZ44uZ2lex" target="_blank" rel="noopener"
-                            class="pub-thumb" aria-label="Watch the paper video">
-                            <img src="https://img.youtube.com/vi/3p01hXMULtc/maxresdefault.jpg"
-                                alt="Multi-robot teleoperation paper preview" loading="lazy">
-                        </a>
-                        <div>
-                            <span class="venue">Under review</span>
-                            <h3>Robots That Know When to Ask: VLM-Driven Reasoning for Human-on-Demand Multi-Robot
-                                Teleoperation</h3>
-                            <p class="pub-authors"><strong>Vivek Kumar</strong>, et al.</p>
-                            <p class="pub-venue">Under review</p>
-                            <div class="project-links">
-                                <a href="https://youtu.be/3p01hXMULtc?si=Co7V5-fZ44uZ2lex" target="_blank"
-                                    rel="noopener"><i class="fab fa-youtube"></i> Video</a>
-                            </div>
-                        </div>
-                    </article>
                 </div>
             </div>
         </section>
